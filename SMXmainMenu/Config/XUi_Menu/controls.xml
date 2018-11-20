@@ -1,0 +1,41 @@
+<configs>
+
+	<append xpath="/controls">
+
+<!-- The following section adds new Main Menu Buttons -->
+
+		<SMXmainMenuBTN1>
+			<rect name="${name}" depth="${depth|3}" pos="${pos|0,0}" width="${width|200}" height="${height|85}" enabled_font_color="${enabled_font_color|[labelColor]}" disabled_font_color="${disabled_font_color|[disabledLabelColor]}" controller="SimpleButton" visible="${visible|true}" font_size_default="${height-16|16}" font_size_hover="${height-8|24}">
+				<texture depth="1" pivot="${pivot|center}" name="mmbutton1" texture="@file:Mods/SMXmainMenu/Textures/mainmenu/mmbutton1.png" material="Materials\Transparent Colored" size="253,85" pos="10,-24" />
+				<button name="clickable" sprite="" pos="0,${Round(-height/2,0)|-16}" type="sliced" hoverscale="1.0" pivot="${pivot|center}" tooltip_key="${tooltip_key|}" />
+				<label depth="2" name="btnLabel" width="${width-20|196}" pos="10,${Round(-height/2,0)|-16}" justify="center" text="${caption|}" text_key="${caption_key|}" effect="outline" pivot="${pivot|center}" font_size="${height-16|16}" />
+			</rect>
+		</SMXmainMenuBTN1>
+
+		<SMXmainMenuBTN2>
+			<rect name="${name}" depth="${depth|3}" pos="${pos|0,0}" width="${width|200}" height="${height|85}" enabled_font_color="${enabled_font_color|[labelColor]}" disabled_font_color="${disabled_font_color|[disabledLabelColor]}" controller="SimpleButton" visible="${visible|true}" font_size_default="${height-16|16}" font_size_hover="${height-8|24}">
+				<texture depth="1" pivot="${pivot|center}" name="mmbutton1" texture="@file:Mods/SMXmainMenu/Textures/mainmenu/mmbutton2.png" material="Materials\Transparent Colored" size="253,85" pos="10,-24" />
+				<button name="clickable" sprite="" pos="0,${Round(-height/2,0)|-16}" type="sliced" hoverscale="1.0" pivot="${pivot|center}" tooltip_key="${tooltip_key|}" />
+				<label depth="2" name="btnLabel" width="${width-20|196}" pos="10,${Round(-height/2,0)|-16}" justify="center" text="${caption|}" text_key="${caption_key|}" effect="outline" pivot="${pivot|center}" font_size="${height-16|16}" />
+			</rect>
+		</SMXmainMenuBTN2>
+
+		<SMXmainMenuBTN3>
+			<rect name="${name}" depth="${depth|3}" pos="${pos|0,0}" width="${width|200}" height="${height|85}" enabled_font_color="${enabled_font_color|[labelColor]}" disabled_font_color="${disabled_font_color|[disabledLabelColor]}" controller="SimpleButton" visible="${visible|true}" font_size_default="${height-16|16}" font_size_hover="${height-8|24}">
+				<texture depth="1" pivot="${pivot|center}" name="mmbutton1" texture="@file:Mods/SMXmainMenu/Textures/mainmenu/mmbutton2.png" material="Materials\Transparent Colored" size="183,85" pos="10,-24" />
+				<button name="clickable" sprite="" pos="0,${Round(-height/2,0)|-16}" type="sliced" hoverscale="1.0" pivot="${pivot|center}" tooltip_key="${tooltip_key|}" />
+				<label depth="2" name="btnLabel" width="${width-20|196}" pos="10,${Round(-height/2,0)|-16}" justify="center" text="${caption|}" text_key="${caption_key|}" effect="outline" pivot="${pivot|center}" font_size="${height-16|16}" />
+			</rect>
+		</SMXmainMenuBTN3>
+
+		<SMXmainMenuBTN4>
+			<rect name="${name}" depth="${depth|3}" pos="${pos|0,0}" width="${width|200}" height="${height|32}" enabled_font_color="${enabled_font_color|[labelColor]}" disabled_font_color="${disabled_font_color|[disabledLabelColor]}" controller="SimpleButton" visible="${visible|true}" font_size_default="${height-16|16}" font_size_hover="${height-8|24}">
+				<button name="clickable" sprite="" flip="horizontally" pos="0,${Round(-height/2,0)|-16}" defaultcolor="255,255,255,80" hovercolor="[white]" type="sliced" hoverscale="1.0" pivot="${pivot|left}" tooltip_key="${tooltip_key|}" />
+				<texture name="credits" texture="@file:Mods/SMXmainMenu/Textures/mainmenu/tfplogo.png" material="Materials\Transparent Colored" size="160,56" pos="-80,0" />
+				<label depth="2" name="btnLabel" width="${width-20|196}" pos="10,${Round(-height/2,0)|-16}" justify="left" text="${caption|}" text_key="" effect="outline" pivot="${pivot|left}" font_size="${height-16|16}" />
+			</rect>
+		</SMXmainMenuBTN4>
+
+	</append>
+
+</configs>

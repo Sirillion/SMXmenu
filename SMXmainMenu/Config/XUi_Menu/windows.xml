@@ -1,0 +1,62 @@
+<configs>
+
+<!-- The following section adds a new Background Image -->
+
+	<append xpath="/windows/window[@name='menuBackground']">
+		<texture depth="1" texture="@file:Mods/SMXmainMenu/Textures/mainmenu/background.png" material="Materials/Transparent Colored" name="mainBG" anchor_left="#cam,0,-5" anchor_bottom="#cam,0,-5" anchor_right="#cam,1,5" anchor_top="#cam,1,5" />
+	</append>
+
+	<remove xpath="/windows/window[@name='menuBackground']/texture[@name='bgTexture']" />
+
+<!-- The following section moves and reduces the size of the Game Logo, and changes its depth value -->
+
+	<set xpath="/windows/window[@name='mainMenuLogo']/texture[@name='gameLogo']/@anchor_top">#cam,0.5,450</set>
+	<set xpath="/windows/window[@name='mainMenuLogo']/texture[@name='gameLogo']/@anchor_left">#cam,0.5,-1000</set>
+	<set xpath="/windows/window[@name='mainMenuLogo']/texture[@name='gameLogo']/@anchor_bottom">#cam,0.5,150</set>
+
+	<set xpath="/windows/window[@name='mainMenuLogo']/@depth">3</set>
+
+<!-- The following section adds a new Main Menu -->
+
+	<append xpath="/windows">
+
+		<window name="SMXmainMenu" anchor="CenterCenter" pos="-560,0" width="1050" height="780" controller="MainMenu" cursor_area="true">
+
+			<texture depth="2" texture="@file:Mods/SMXmainMenu/Textures/mainmenu/menubg.png" material="Materials/Transparent Colored" name="menuBG" size="408,1080" pos="60,0" pivot="center" />
+
+			<grid pos="50,80" rows="13" cell_width="230" cell_height="70" repeat_content="false" arrangement="vertical">
+				<SMXmainMenuBTN1 name="btnNewGame" pivot="center" width="230" height="54" caption_key="xuiNewGame" />
+				<SMXmainMenuBTN2 name="btnContinueGame" pivot="center" width="230" height="54" caption_key="xuiContinueGame" />
+				<SMXmainMenuBTN1 name="btnConnectToServer" pivot="center" width="230" height="54" caption_key="xuiConnectToServer" />
+				<SMXmainMenuBTN2 name="btnEditingTools" pivot="center" width="230" height="54" caption_key="xuiEditingTools" />
+				<SMXmainMenuBTN1 name="btnOptions" pivot="center" width="230" height="54" caption_key="xuiOptions" />
+				<rect><texture depth="1" pivot="${pivot|center}" name="redsep" texture="@file:Mods/SMXmainMenu/Textures/mainmenu/redsep.png" material="Materials\Transparent Colored" size="301,4" pos="-140,-24" /></rect>
+				<SMXmainMenuBTN1 name="btnQuit" pivot="center" width="230" height="54" caption_key="xuiQuit" />
+			</grid>
+			<SMXmainMenuBTN4 name="btnCredits" pivot="center" width="160" height="56" caption_key="xuiCredits" pos="1300,-420" />
+		</window>
+
+<!-- The following section adds a new Options Menu -->
+
+		<window name="SMXoptionsMenu" anchor="CenterCenter" pos="-560,0" width="1050" height="780" controller="OptionsMenu" cursor_area="true">
+
+			<texture depth="2" texture="@file:Mods/SMXmainMenu/Textures/mainmenu/menubg.png" material="Materials/Transparent Colored" name="menuBG" size="408,1080" pos="60,0" pivot="center" />
+
+			<grid name="optionsButtons" pos="50,80" rows="13" cell_width="400" cell_height="70" repeat_content="false" arrangement="vertical">
+				<SMXmainMenuBTN1 name="btnVideo" pivot="center" width="400" height="54" caption_key="xuiBtnOptionsVideo" />
+				<SMXmainMenuBTN2 name="btnAudio" pivot="center" width="400" height="54" caption_key="xuiBtnOptionsAudio" />
+				<SMXmainMenuBTN1 name="btnControls" pivot="center" width="400" height="54" caption_key="xuiBtnOptionsControls" />
+				<SMXmainMenuBTN2 name="btnProfiles" pivot="center" width="400" height="54" caption_key="xuiBtnOptionsProfiles" visible="{notingame}" />
+				<SMXmainMenuBTN1 name="btnAccount" pivot="center" width="400" height="54" caption_key="xuiBtnOptionsAccount" visible="{notreleaseingame}" />
+				<rect><texture depth="1" pivot="${pivot|center}" name="redsep" texture="@file:Mods/SMXmainMenu/Textures/mainmenu/redsep.png" material="Materials\Transparent Colored" size="301,4" pos="-140,-24" visible="{ingame}" /></rect>
+				<SMXmainMenuBTN3 name="btnBack" pivot="center" width="400" height="54" caption_key="xuiBack" visible="{ingame}" />
+			</grid>
+
+			<widget anchor_left="#cam,0,40" anchor_bottom="#cam,0,80" anchor_right="#cam,0,50" anchor_top="#cam,0,90" pivot="bottomleft">
+				<SMXmainMenuBTN3 name="btnBack" pivot="left" width="200" height="54" caption_key="xuiBack" visible="{notingame}" />
+			</widget>
+		</window>
+
+	</append>
+
+</configs>

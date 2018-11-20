@@ -1,0 +1,38 @@
+<configs>
+
+<!--	// MODLET:			SMX - Main Menu UI Conversion
+
+		// EAC:				Friendly
+
+		// BUILD:			A17b197
+
+		// DISCLAIMER:		Please be advised that this modlet is intended for use with the build mentioned above. That said it may very well be that
+							it can be used with other builds with little to no risk of failure. It all depends on the standard files being updated or not.
+
+		// MOD DESCRIPTION:	The purpose of this modlet is to enhance the Main Menu UI.
+
+		// TERMS OF USE:	You are allowed to use this modlet for your own personal use and/or distribute said modlet bundled with something of your own
+							creation as long as the files remain unaltered and you do not claim credit for its creation.
+							You are welcome to, but not required to, inform the author of this modlet should you wish to bundle and re-distribute said
+							modlet as described above.
+
+		// CREDITS:			Sirillion (author)
+-->
+
+<!-- The following section adds a new Main Menu -->
+
+	<append xpath="/xui/ruleset[@name='default']/window_group[@name='mainMenu']">
+		<window name="SMXmainMenu" />
+	</append>
+
+	<remove xpath="/xui/ruleset[@name='default']/window_group[@name='mainMenu']/window[@name='mainMenu']" />
+
+<!-- The following section adds a new Options Menu -->
+
+	<append xpath="/xui/ruleset[@name='default']/window_group[@name='optionsMenu']">
+		<window name="SMXoptionsMenu" />
+	</append>
+
+	<remove xpath="/xui/ruleset[@name='default']/window_group[@name='optionsMenu']/window[@name='optionsMenu']" />
+
+</configs>
