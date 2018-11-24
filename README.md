@@ -4,4 +4,4 @@ SMXmainMenu is a main menu conversion modlet. It was made to extend the art styl
 
 > Dependencies: None.
 
-> Compatibility: All mods and modlets that doesn't affect the XUi_Menu folder.
+> Compatibility: Will work with all mods/modlets that doesn't modify the contents of the XUi_Menu folder.
