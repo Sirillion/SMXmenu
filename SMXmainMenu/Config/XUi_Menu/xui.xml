@@ -1,15 +1,22 @@
 <configs>
 
-<!--	// MODLET:			SMX - Main Menu UI Conversion
+<!--	// MODLET:			SMXmainMenu
 
 		// EAC:				Friendly
 
-		// BUILD:			A17b197
+		// VERSION:			A17b199eR1
+
+		// BUILD:			A17b199
 
 		// DISCLAIMER:		Please be advised that this modlet is intended for use with the build mentioned above. That said it may very well be that
-							it can be used with other builds with little to no risk of failure. It all depends on the standard files being updated or not.
+							it can be used with other builds with little to no risk of failure. It all depends on the standard files being updated or not
+							and you can verify this by looking at the date of the standard files when an update have occured.
 
-		// MOD DESCRIPTION:	The purpose of this modlet is to enhance the Main Menu UI.
+		// MOD DESCRIPTION:	The purpose of this modlet is to enhance the MAIN MENU UI. Please note that this modlet will change the MAIN MENU UI only. If
+							you want to enhance the in-game HUD you can supplement this modlet with SMXhud.(available now) If you want to opt for a total
+							in-game UI conversion you can supplement this modlet and the SMXhud modlet with SMXui.(currently in development)
+
+		// DEPENDENCIES:	None.
 
 		// TERMS OF USE:	You are allowed to use this modlet for your own personal use and/or distribute said modlet bundled with something of your own
 							creation as long as the files remain unaltered and you do not claim credit for its creation.
@@ -19,20 +26,31 @@
 		// CREDITS:			Sirillion (author)
 -->
 
-<!-- The following section adds a new Main Menu -->
 
-	<append xpath="/xui/ruleset[@name='default']/window_group[@name='mainMenu']">
-		<window name="SMXmainMenu" />
-	</append>
+<!--	// SMX // Main Menu -->
 
-	<remove xpath="/xui/ruleset[@name='default']/window_group[@name='mainMenu']/window[@name='mainMenu']" />
+		<append xpath="/xui/ruleset[@name='default']/window_group[@name='mainMenu']">
+			<window name="SMXmainMenu" />
+		</append>
 
-<!-- The following section adds a new Options Menu -->
+		<remove xpath="/xui/ruleset[@name='default']/window_group[@name='mainMenu']/window[@name='mainMenu']" />
 
-	<append xpath="/xui/ruleset[@name='default']/window_group[@name='optionsMenu']">
-		<window name="SMXoptionsMenu" />
-	</append>
 
-	<remove xpath="/xui/ruleset[@name='default']/window_group[@name='optionsMenu']/window[@name='optionsMenu']" />
+<!--	// SMX // Options Menu -->
+
+		<append xpath="/xui/ruleset[@name='default']/window_group[@name='optionsMenu']">
+			<window name="SMXoptionsMenu" />
+		</append>
+
+		<remove xpath="/xui/ruleset[@name='default']/window_group[@name='optionsMenu']/window[@name='optionsMenu']" />
+
+
+<!--	// SMX // Editing Tools Menu -->
+
+		<append xpath="/xui/ruleset[@name='default']/window_group[@name='editingTools']">
+			<window name="SMXeditingTools" />
+		</append>
+
+		<remove xpath="/xui/ruleset[@name='default']/window_group[@name='editingTools']/window[@name='editingTools']" />
 
 </configs>
