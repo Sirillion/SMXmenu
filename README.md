@@ -1,4 +1,4 @@
-# SMXmenu
+# SMXmenu - A17
 
 <p align="center">
   <img src="https://i.imgur.com/MoMhwW1.jpg" width="700" title="SMXmenu - Main Menu - A17.2">
