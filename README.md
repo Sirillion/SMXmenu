@@ -1,7 +1,8 @@
 # SMXmenu A172b27r1
 
 <p align="center">
-  <img src="https://i.imgur.com/MoMhwW1.jpg" width="700" title="SMXmenu - A17.2">
+  <img src="https://i.imgur.com/MoMhwW1.jpg" width="700" title="SMXmenu - Main Menu - A17.2">
+  <img src="https://i.imgur.com/WbrG2SM.jpg" width="700" title="SMXmenu - In Game Menu - A17.2">
 </p>
 
 SMXmenu is a menu UI conversion modlet. It was made to extend the art style of SMX into the main and in game menus of the game and even though it was made to supplement SMXhud it also works stand alone for those that just want their menus modded.
