@@ -49,8 +49,8 @@
 					<SMX_tfp_logo name="btnCredits" pos="0,0" width="160" height="56" caption_key="xuiCredits" pivot="center" />
 				</widget>
 
-				<label name="SMXeditionInfo" pos="60,-470" style="SMX.edition.info" />
-				<label name="SMXversionInfo" pos="60,-490" style="SMX.version.info" />
+				<label name="SMXeditionInfo" pos="60,-470" style="SMX.edition.info" font_face="AgencyB" crispness="Never" />
+				<label name="SMXversionInfo" pos="60,-490" style="SMX.version.info" font_face="AgencyB" crispness="Never" />
 
 			</window>
 		</append>
@@ -405,27 +405,29 @@
 						</rect>
 
 						<rect tab_key="xuiOptionsVideoQuality">
-							<videooption name="QualityPreset" pos="8,-40" type="ComboBoxList&lt;System.String&gt;" values="Low,Medium,High,Custom" value_wrap="false" />
-							<grid pos="8,-120" rows="10" cell_width="525" cell_height="45" repeat_content="false" arrangement="vertical">
+							<videooption name="QualityPreset" pos="8,-40" type="ComboBoxList&lt;System.String&gt;" values="Low,Medium,High,Ultra,Custom" value_wrap="false" />
+							<grid pos="8,-110" rows="11" cell_width="525" cell_height="42" repeat_content="false" arrangement="vertical">
 								<videooption name="AntiAliasing" type="ComboBoxBool" />
 								<videooption name="TextureQuality" type="ComboBoxList&lt;System.String&gt;" values="Full,Half,Quarter,Eighth" value_wrap="false" reverse_list="true" />
 								<videooption name="UMATextureQuality" type="ComboBoxList&lt;System.String&gt;" values="High,Middle,Low,Lowest" value_wrap="false" reverse_list="true" />
 								<videooption name="ReflectionQuality" type="ComboBoxList&lt;System.String&gt;" values="Off,Low,Middle,High,Ultra,Ultra+" value_wrap="false" />
 								<videooption name="ReflectedShadows" type="ComboBoxBool" />
-								<videooption name="ShadowsDistance" type="ComboBoxList&lt;System.String&gt;" values="Off,Near,Far" value_wrap="false" />
+								<videooption name="ShadowsDistance" type="ComboBoxList&lt;System.String&gt;" values="Off,Near,Middle,Far" value_wrap="false" />
 								<videooption name="WaterQuality" type="ComboBoxList&lt;System.String&gt;" values="Low,High" value_wrap="false" />
 								<videooption name="WaterParticles" type="ComboBoxFloat" value_increment="0.10" value_wrap="false" format_string="0%" />
 								<videooption name="ViewDistance" type="ComboBoxList&lt;System.String&gt;" values="Low,Medium,High" value_wrap="false" />
+								<videooption name="LODDistance" type="ComboBoxFloat" value_increment="0.05" value_wrap="false" format_string="0%" />
 								<!--videooption name="FieldOfView" type="ComboBoxInt" value_increment="2" value_wrap="false" /-->
 								<rect />
-								<videooption name="LODDistance" type="ComboBoxFloat" value_increment="0.05" value_wrap="false" format_string="0%" />
 								<videooption name="TreeQuality" type="ComboBoxList&lt;System.String&gt;" values="Low,Middle,High,Ultra" value_wrap="false" />
 								<videooption name="GrassDistance" type="ComboBoxList&lt;System.String&gt;" values="Near,Normal,Far" value_wrap="false" />
 								<rect />
 								<!-- Image Effects -->
+								<videooption name="Bloom" type="ComboBoxBool" />
+								<videooption name="DepthOfField" type="ComboBoxBool" />
 								<videooption name="MotionBlur" type="ComboBoxList&lt;System.String&gt;" values="Off,Simple,Normal" value_wrap="false" />
 								<videooption name="SSAO" type="ComboBoxBool" />
-								<videooption name="DepthOfField" type="ComboBoxBool" />
+								<videooption name="SSReflections" type="ComboBoxBool" />
 								<videooption name="SunShafts" type="ComboBoxBool" />
 								<rect />
 								<videooption name="StreamingMipmapsEnabled" type="ComboBoxBool" />

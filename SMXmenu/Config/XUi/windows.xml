@@ -20,8 +20,8 @@
 					<SMX_menu_button_N_3 name="btnExit" width="230" height="50" caption_key="xuiMenuExit" pivot="center" />
 				</grid>
 
-				<label name="SMXeditionInfo" depth="99" style="SMX.edition.info" />
-				<label name="SMXversionInfo" depth="99" style="SMX.version.info" />
+				<label name="SMXeditionInfo" depth="99" style="SMX.edition.info" font_face="AgencyB" crispness="Never" />
+				<label name="SMXversionInfo" depth="99" style="SMX.version.info" font_face="AgencyB" crispness="Never" />
 
 				<!--texture name="SMXchangeLogHeader" depth="2" style="SMX.changelog.texture" pivot="center" />
 				<label name="SMXchangeLogHeader" depth="3" style="SMX.changelog.label" pivot="center" />

@@ -10,6 +10,7 @@
 				<style_entry name="font_size" value="16" />
 				<style_entry name="color" value="[white]" />
 				<style_entry name="effect" value="outline" />
+				<style_entry name="upper_case" value="true" />
 				<style_entry name="justify" value="center" />
 				<style_entry name="pivot" value="center" />
 			</style>
@@ -17,7 +18,7 @@
 			<style name="SMX.version.info" type="label">
 				<style_entry name="pos" value="60,-490" />
 				<style_entry name="size" value="250,33" />
-				<style_entry name="text" value="SMX-A17.2b27r1" />
+				<style_entry name="text" value="SMX-A17.4B4r1" />
 				<style_entry name="font_size" value="16" />
 				<style_entry name="color" value="[white]" />
 				<style_entry name="effect" value="outline" />
