@@ -328,7 +328,7 @@
 		<remove xpath="/windows/window[@name='optionsAudio']" />
 
 		<append xpath="/windows">
-			<window name="optionsAudio" style="SMX.menuPanel.window" anchor="CenterCenter" controller="OptionsAudio" cursor_area="true">
+			<window name="optionsAudio" style="SMX.menuPanel.window" pos="-600,375" anchor="CenterCenter" controller="OptionsAudio" cursor_area="true">
 
 				<!--texture name="SMXwipHelper" style="SMX.wip.background" /-->
 
@@ -369,7 +369,7 @@
 		<remove xpath="/windows/window[@name='optionsVideo']" />
 
 		<append xpath="/windows">
-			<window name="optionsVideo" style="SMX.menuPanel.window" anchor="CenterCenter" controller="OptionsVideo" cursor_area="true">
+			<window name="optionsVideo" style="SMX.menuPanel.window" pos="-600,375" anchor="CenterCenter" controller="OptionsVideo" cursor_area="true">
 
 				<!--texture name="SMXwipHelper" style="SMX.wip.background" /-->
 
@@ -460,7 +460,7 @@
 		<remove xpath="/windows/window[@name='optionsControls']" />
 
 		<append xpath="/windows">
-			<window name="optionsControls" style="SMX.menuPanel.window" anchor="CenterCenter" controller="OptionsControls" cursor_area="true">
+			<window name="optionsControls" style="SMX.menuPanel.window" pos="-600,375" anchor="CenterCenter" controller="OptionsControls" cursor_area="true">
 
 				<!--texture name="SMXwipHelper" style="SMX.wip.background" /-->
 
@@ -637,7 +637,7 @@
 		<remove xpath="/windows/window[@name='optionsProfiles']" />
 
 		<append xpath="/windows">
-			<window name="optionsProfiles" style="SMX.menuPanel.window" anchor="CenterCenter" controller="OptionsProfiles" cursor_area="true">
+			<window name="optionsProfiles" style="SMX.menuPanel.window" pos="-600,375" anchor="CenterCenter" controller="OptionsProfiles" cursor_area="true">
 
 				<!--texture name="SMXwipHelper" style="SMX.wip.background" /-->
 
