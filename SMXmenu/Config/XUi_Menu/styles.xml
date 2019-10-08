@@ -1,99 +1,47 @@
 <configs>
 
-<!--	// SMX // SMX Edition/Version Update -->
+<!--	// SMX // Global Colors -->
+
+		<append xpath="/styles/global">
+			<style_entry name="menuElementsBG"						value="0,0,0" />
+			<style_entry name="menuElementsRed"						value="175,30,25" />
+			<style_entry name="menuElementsIcon"					value="255,255,255" />
+			<style_entry name="menuElementsLabel"					value="255,255,255" />
+		</append>
+
+
+<!--	// SMX // Defined Icon Colors -->
 
 		<append xpath="/styles">
-			<style name="SMX.edition.info" type="label">
-				<style_entry name="depth" value="9" />
-				<style_entry name="size" value="250,33" />
-				<style_entry name="text" value="Current Stable Version" />
-				<style_entry name="font_size" value="16" />
-				<style_entry name="color" value="[white]" />
-				<style_entry name="effect" value="outline" />
-				<style_entry name="upper_case" value="true" />
-				<style_entry name="justify" value="center" />
-				<style_entry name="pivot" value="center" />
-			</style>
-
-			<style name="SMX.version.info" type="label">
-				<style_entry name="depth" value="9" />
-				<style_entry name="size" value="250,33" />
-				<style_entry name="text" value="SMX-A17.4B4r1" />
-				<style_entry name="font_size" value="16" />
-				<style_entry name="color" value="[white]" />
-				<style_entry name="effect" value="outline" />
-				<style_entry name="upper_case" value="false" />
-				<style_entry name="justify" value="center" />
-				<style_entry name="pivot" value="center" />
+			<style name="smx_color_icons">
+				<style_entry name="color" 							value="[white]" />				
+				<style_entry name="hovercolor" 						value="[mediumGrey]" />				
+				<style_entry name="selectedcolor" 					value="[lightGrey]" />				
 			</style>
 		</append>
 
 
-<!-- 	// SMX // Work in Progress Tools -->
+<!--	// SMX // Menu Button -->
 
 		<append xpath="/styles">
-			<style name="SMX.wip.banner" type="sprite">
-				<style_entry name="depth" value="9" />
-				<style_entry name="size" value="174,120" />
-				<style_entry name="atlas" value="itemiconatlas" />
-				<style_entry name="sprite" value="smx_wip_bnr" />
-				<style_entry name="pivot" value="center" />
-				<style_entry name="rotation" value="70" />
-			</style>
-
-			<style name="SMX.wip.background" type="texture">
-				<style_entry name="depth" value="1" />
-				<style_entry name="texture" value="@modfolder:Textures/menu/smx_wip_bg.png" />
-				<style_entry name="anchor_left" value="#cam,0,-5" />
-				<style_entry name="anchor_bottom" value="#cam,0,-5" />
-				<style_entry name="anchor_right" value="#cam,1,5" />
-				<style_entry name="anchor_top" value="#cam,1,5" />
+			<style name="smx_menu_button">
+				<style_entry name="width" 							value="230" />				
+				<style_entry name="height" 							value="60" />				
+				<style_entry name="pivot" 							value="center" />				
 			</style>
 		</append>
 
 
-<!--	// SMX // HUD Logo -->
+<!-- 	// SMX // SMX Dev Tools -->
 
 		<append xpath="/styles">
-			<style name="SMX.hudLogo.window" type="window">
-				<style_entry name="pos" value="0,2" />
-				<style_entry name="size" value="250,40" />
-			</style>
-
-			<style name="SMX.hudLogo.texture" type="texture">
-				<style_entry name="depth" value="1" />
-				<style_entry name="size" value="250,40" />
-				<style_entry name="texture" value="@modfolder:Textures/menu/smx_hud_logo.png" />
-			</style>
-		</append>
-
-
-<!--	// SMX // Menu -->
-
-		<append xpath="/styles">
-			<style name="SMX.menu.window" type="window">
-				<style_entry name="pos" value="360,0" />
-				<style_entry name="size" value="408,1080" />
-			</style>
-
-			<style name="SMX.menu.texture" type="texture">
-				<style_entry name="depth" value="2" />
-				<style_entry name="size" value="408,1080" />
-				<style_entry name="texture" value="@modfolder:Textures/menu/smx_menu_bg.png" />
-				<style_entry name="pivot" value="center" />
-			</style>
-
-			<style name="SMX.menu.grid">
-				<style_entry name="depth" value="3" />
-				<style_entry name="rows" value="13" />
-				<style_entry name="cell_width" value="230" />
-				<style_entry name="cell_height" value="70" />
-			</style>
-
-			<style name="SMX.menu.hsepred">
-				<style_entry name="depth" value="1" />
-				<style_entry name="size" value="301,4" />
-				<style_entry name="texture" value="@modfolder:Textures/menu/smx_hsep_red.png" />
+			<style name="smx_devtool_background" type="texture">
+				<style_entry name="depth" 							value="1" />
+				<style_entry name="texture" 						value="@modfolder:Textures/menu/smx_wip_bg.png" />
+				<style_entry name="anchor_left" 					value="#cam,0,-5" />
+				<style_entry name="anchor_bottom" 					value="#cam,0,-5" />
+				<style_entry name="anchor_right" 					value="#cam,1,5" />
+				<style_entry name="anchor_top" 						value="#cam,1,5" />
 			</style>
 		</append>
 
@@ -101,10 +49,10 @@
 <!--	// SMX // New/Continue Game -->
 
 		<append xpath="/styles">
-			<style name="SMX.ncg.color.coding">
-				<style_entry name="matching_version_color" value="60,255,60,128" />
-				<style_entry name="compatible_version_color" value="255,216,0" />
-				<style_entry name="incompatible_version_color" value="255,0,0" />
+			<style name="smx_ncgame_color_coding">
+				<style_entry name="matching_version_color" 			value="60,255,60,128" />
+				<style_entry name="compatible_version_color" 		value="255,216,0" />
+				<style_entry name="incompatible_version_color" 		value="255,0,0" />
 			</style>
 		</append>
 
@@ -112,49 +60,98 @@
 <!--	// SMX // Menu Panels -->
 
 		<append xpath="/styles">
-			<style name="SMX.menuPanel.window" type="window">
-				<style_entry name="pos" value="-625,395" />
-				<style_entry name="size" value="1250,780" />
+			<style name="smx_menupanel_window" type="window">
+				<style_entry name="pos" 							value="-625,395" />
+				<style_entry name="size" 							value="1250,780" />
 			</style>
+		</append>
 
-			<style name="SMX.menuPanel.background" type="texture">
-				<style_entry name="depth" value="2" />
-				<style_entry name="pos" value="0,70" />
-				<style_entry name="size" value="1250,765" />
-				<style_entry name="texture" value="@modfolder:Textures/menu/smx_panel_bg.png" />
+		<append xpath="/styles">
+			<style name="smx_menupanel_header" type="panel">
+				<style_entry name="name" 							value="header" />
+				<style_entry name="depth" 							value="3" />
+				<style_entry name="pos" 							value="0,5" />
+				<style_entry name="height" 							value="80" />
+				<style_entry name="disableautobackground" 			value="true" />
 			</style>
+		</append>
 
-			<style name="SMX.menuPanel.header" type="panel">
-				<style_entry name="name" value="header" />
-				<style_entry name="depth" value="4" />
-				<style_entry name="pos" value="0,5" />
-				<style_entry name="height" value="80" />
-				<style_entry name="disableautobackground" value="true" />
+		<append xpath="/styles">
+			<style name="smx_menupanel_header" type="sprite">
+				<style_entry name="depth" 							value="4" />
+				<style_entry name="pos" 							value="0,70" />
+				<style_entry name="size" 							value="1250,80" />
+				<style_entry name="atlas" 							value="menuElements" />
+				<style_entry name="sprite" 							value="smx_general_panel_header" />
+				<style_entry name="color" 							value="[menuElementsRed]" />
+				<style_entry name="globalopacitymod" 				value="1.8" />
 			</style>
+		</append>
 
-			<style name="SMX.menuPanel.header" type="texture">
-				<style_entry name="depth" value="3" />
-				<style_entry name="pos" value="0,70" />
-				<style_entry name="size" value="1250,80" />
-				<style_entry name="texture" value="@modfolder:Textures/menu/smx_panel_hdr.png" />
+		<append xpath="/styles">
+			<style name="smx_menupanel_background" type="sprite">
+				<style_entry name="depth" 							value="2" />
+				<style_entry name="pos" 							value="0,70" />
+				<style_entry name="size" 							value="1250,765" />
+				<style_entry name="atlas" 							value="menuElements" />
+				<style_entry name="sprite" 							value="smx_general_panel_background" />
+				<style_entry name="color" 							value="[menuElementsBG]" />
+				<style_entry name="globalopacitymod" 				value="1.5" />
 			</style>
+		</append>
 
-			<style name="SMX.menuPanel.title" type="label">
-				<style_entry name="name" value="windowName" />
-				<style_entry name="depth" value="5" />
-				<style_entry name="pos" value="0,-4" />
-				<style_entry name="size" value="1250,80" />
-				<style_entry name="font_size" value="36" />
-				<style_entry name="effect" value="outline" />
-				<style_entry name="justify" value="center" />
-				<style_entry name="foregroundlayer" value="true" />
+		<append xpath="/styles">
+			<style name="smx_menupanel_title" type="label">
+				<style_entry name="name" 							value="windowName" />
+				<style_entry name="depth" 							value="6" />
+				<style_entry name="pos" 							value="0,-14" />
+				<style_entry name="size" 							value="1250,80" />
+				<style_entry name="font_size" 						value="36" />
+				<style_entry name="font_face" 						value="AgencyB" />
+				<style_entry name="crispness" 						value="Never" />
+				<style_entry name="effect" 							value="outline" />
+				<style_entry name="justify" 						value="center" />
+				<style_entry name="foregroundlayer" 				value="true" />
 			</style>
+		</append>
 
-			<style name="SMX.menuPanel.tabsBG" type="texture">
-				<style_entry name="depth" value="2" />
-				<style_entry name="pos" value="15,10" />
-				<style_entry name="size" value="1230,60" />
-				<style_entry name="texture" value="@modfolder:Textures/menu/smx_paneltabs_bg.png" />
+		<append xpath="/styles">
+			<style name="smx_menupanel_tabs" type="sprite">
+				<style_entry name="depth" 							value="4" />
+				<style_entry name="pos" 							value="15,6" />
+				<style_entry name="size" 							value="1230,52" />
+				<style_entry name="atlas" 							value="menuElements" />
+				<style_entry name="sprite" 							value="smx_menu_tabs_background" />
+				<style_entry name="color" 							value="[menuElementsBG]" />
+				<style_entry name="globalopacitymod" 				value="1.5" />
+			</style>
+		</append>
+
+		<append xpath="/styles">
+			<style name="smx_general_separation_line_header" type="sprite">
+				<style_entry name="depth" 							value="5" />
+				<style_entry name="pos" 							value="20,5" />
+				<style_entry name="size" 							value="5,1210" />
+				<style_entry name="atlas" 							value="menuElements" />
+				<style_entry name="sprite" 							value="smx_general_separate_line" />
+				<style_entry name="color" 							value="[white]" />
+				<style_entry name="rotation" 						value="90" />
+				<!--style_entry name="flip" 						value="horizontally" /-->
+				<style_entry name="globalopacitymod" 				value="1.5" />
+			</style>
+		</append>
+
+		<append xpath="/styles">
+			<style name="smx_general_separation_line_tabs" type="sprite">
+				<style_entry name="depth" 							value="5" />
+				<style_entry name="pos" 							value="20,-48" />
+				<style_entry name="size" 							value="5,1210" />
+				<style_entry name="atlas" 							value="menuElements" />
+				<style_entry name="sprite" 							value="smx_general_separate_line" />
+				<style_entry name="color" 							value="[white]" />
+				<style_entry name="rotation" 						value="90" />
+				<!--style_entry name="flip" 						value="horizontally" /-->
+				<style_entry name="globalopacitymod" 				value="1.5" />
 			</style>
 		</append>
 
