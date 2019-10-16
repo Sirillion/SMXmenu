@@ -1,9 +1,11 @@
 # SMXmenu - A18
 
 <p align="center">
-  <img src="https://i.imgur.com/hU7RUuM.jpg" width="700" title="SMXmenu - Main Menu - A17.2">
+  <img src="https://i.imgur.com/hU7RUuM.jpg" width="700" title="SMXmenu - Main Menu - A18">
   
-  <img src="https://i.imgur.com/o2vlWI0.jpg" width="700" title="SMXmenu - In Game Menu - A17.2">
+  <img src="https://i.imgur.com/o2vlWI0.jpg" width="700" title="SMXmenu - In Game Menu - A18">
+  
+  <img src="https://i.imgur.com/Kcw5zwb.jpg" width="700" title="SMXmenu - Video Options - A18">
 </p>
 
 **Description:**
