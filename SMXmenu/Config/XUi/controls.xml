@@ -6,7 +6,7 @@
 			<smx_mainmenubutton_1>
 				<rect name="${name}" depth="${depth|3}" pos="${pos|0,0}" width="${width|200}" height="${height|60}" enabled_font_color="${enabled_font_color|[labelColor]}" disabled_font_color="${disabled_font_color|[disabledLabelColor]}" controller="SimpleButton" visible="${visible|true}" font_size_default="${height-26|16}" font_size_hover="${height-24|24}">
 					<button name="clickable" pos="10,${Round(-height/2,0)|-16}" atlas="menuElements" sprite="smx_menu_button_1" defaultcolor="[menuElementsRed]" hovercolor="[lightGrey]" type="sliced" hoverscale="1.0" pivot="${pivot|left}" tooltip_key="${tooltip_key|}" sound_play_on_hover="[default_hover]" sound="${sound|[default_click]}"/>
-					<label name="btnLabel" depth="2" pos="10,${Round(-height/2,0)|-16}" width="${width-20|196}" text="${caption|}" text_key="${caption_key|}" font_size="${height-26|16}" effect="outline" pivot="${pivot|center}" justify="center" />
+					<label name="btnLabel" depth="2" pos="10,${Round(-height/2,0)|-16}" width="${width-20|196}" text="${caption|}" text_key="${caption_key|}" font_size="${height-26|16}" effect="outline" upper_case="true" pivot="${pivot|center}" justify="center" />
 				</rect>
 			</smx_mainmenubutton_1>
 		</append>
@@ -15,7 +15,7 @@
 			<smx_mainmenubutton_2>
 				<rect name="${name}" depth="${depth|3}" pos="${pos|0,0}" width="${width|200}" height="${height|60}" enabled_font_color="${enabled_font_color|[labelColor]}" disabled_font_color="${disabled_font_color|[disabledLabelColor]}" controller="SimpleButton" visible="${visible|true}" font_size_default="${height-26|16}" font_size_hover="${height-24|24}">
 					<button name="clickable" pos="10,${Round(-height/2,0)|-16}" atlas="menuElements" sprite="smx_menu_button_1" flip="horizontally" defaultcolor="[menuElementsRed]" hovercolor="[lightGrey]" type="sliced" hoverscale="1.0" pivot="${pivot|left}" tooltip_key="${tooltip_key|}" sound_play_on_hover="[default_hover]" sound="${sound|[default_click]}"/>
-					<label name="btnLabel" depth="2" pos="10,${Round(-height/2,0)|-16}" width="${width-20|196}" text="${caption|}" text_key="${caption_key|}" font_size="${height-26|16}" effect="outline" pivot="${pivot|center}" justify="center" />
+					<label name="btnLabel" depth="2" pos="10,${Round(-height/2,0)|-16}" width="${width-20|196}" text="${caption|}" text_key="${caption_key|}" font_size="${height-26|16}" effect="outline" upper_case="true" pivot="${pivot|center}" justify="center" />
 				</rect>
 			</smx_mainmenubutton_2>
 		</append>
@@ -24,7 +24,7 @@
 			<smx_mainmenubutton_3>
 				<rect name="${name}" depth="${depth|3}" pos="${pos|0,0}" width="${width|200}" height="${height|60}" enabled_font_color="${enabled_font_color|[labelColor]}" disabled_font_color="${disabled_font_color|[disabledLabelColor]}" controller="SimpleButton" visible="${visible|true}" font_size_default="${height-26|16}" font_size_hover="${height-24|24}">
 					<button name="clickable" pos="10,${Round(-height/2,0)|-16}" atlas="menuElements" sprite="smx_menu_button_1" flip="vertically" defaultcolor="[menuElementsRed]" hovercolor="[lightGrey]" type="sliced" hoverscale="1.0" pivot="${pivot|left}" tooltip_key="${tooltip_key|}" sound_play_on_hover="[default_hover]" sound="${sound|[default_click]}"/>
-					<label name="btnLabel" depth="2" pos="10,${Round(-height/2,0)|-16}" width="${width-20|196}" text="${caption|}" text_key="${caption_key|}" font_size="${height-26|16}" effect="outline" pivot="${pivot|center}" justify="center" />
+					<label name="btnLabel" depth="2" pos="10,${Round(-height/2,0)|-16}" width="${width-20|196}" text="${caption|}" text_key="${caption_key|}" font_size="${height-26|16}" effect="outline" upper_case="true" pivot="${pivot|center}" justify="center" />
 				</rect>
 			</smx_mainmenubutton_3>
 		</append>

@@ -4,6 +4,8 @@
 
 		<append xpath="/styles/global">
 			<style_entry name="menuElementsBG"						value="0,0,0" />
+			<style_entry name="menuElementsHDR"						value="175,30,25" />
+			<style_entry name="menuElementsBTN"						value="175,30,25" />
 			<style_entry name="menuElementsRed"						value="175,30,25" />
 			<style_entry name="menuElementsIcon"					value="255,255,255" />
 			<style_entry name="menuElementsLabel"					value="255,255,255" />
@@ -82,8 +84,8 @@
 				<style_entry name="pos" 							value="0,70" />
 				<style_entry name="size" 							value="1250,80" />
 				<style_entry name="atlas" 							value="menuElements" />
-				<style_entry name="sprite" 							value="smx_general_panel_header" />
-				<style_entry name="color" 							value="[menuElementsRed]" />
+				<style_entry name="sprite" 							value="smx_menupanel_header" />
+				<style_entry name="color" 							value="[menuElementsHDR]" />
 				<style_entry name="globalopacitymod" 				value="1.8" />
 			</style>
 		</append>
@@ -94,7 +96,7 @@
 				<style_entry name="pos" 							value="0,70" />
 				<style_entry name="size" 							value="1250,765" />
 				<style_entry name="atlas" 							value="menuElements" />
-				<style_entry name="sprite" 							value="smx_general_panel_background" />
+				<style_entry name="sprite" 							value="smx_menupanel_background" />
 				<style_entry name="color" 							value="[menuElementsBG]" />
 				<style_entry name="globalopacitymod" 				value="1.5" />
 			</style>
@@ -133,7 +135,7 @@
 				<style_entry name="pos" 							value="20,5" />
 				<style_entry name="size" 							value="5,1210" />
 				<style_entry name="atlas" 							value="menuElements" />
-				<style_entry name="sprite" 							value="smx_general_separate_line" />
+				<style_entry name="sprite" 							value="smx_menupanel_separate_line" />
 				<style_entry name="color" 							value="[white]" />
 				<style_entry name="rotation" 						value="90" />
 				<!--style_entry name="flip" 						value="horizontally" /-->
@@ -147,7 +149,7 @@
 				<style_entry name="pos" 							value="20,-48" />
 				<style_entry name="size" 							value="5,1210" />
 				<style_entry name="atlas" 							value="menuElements" />
-				<style_entry name="sprite" 							value="smx_general_separate_line" />
+				<style_entry name="sprite" 							value="smx_menupanel_separate_line" />
 				<style_entry name="color" 							value="[white]" />
 				<style_entry name="rotation" 						value="90" />
 				<!--style_entry name="flip" 						value="horizontally" /-->
