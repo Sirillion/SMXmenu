@@ -1,9 +1,9 @@
-# SMXmenu - A17
+# SMXmenu - A18
 
 <p align="center">
-  <img src="https://i.imgur.com/MoMhwW1.jpg" width="700" title="SMXmenu - Main Menu - A17.2">
+  <img src="https://i.imgur.com/hU7RUuM.jpg" width="700" title="SMXmenu - Main Menu - A17.2">
   
-  <img src="https://i.imgur.com/WbrG2SM.jpg" width="700" title="SMXmenu - In Game Menu - A17.2">
+  <img src="https://i.imgur.com/o2vlWI0.jpg" width="700" title="SMXmenu - In Game Menu - A17.2">
 </p>
 
 **Description:**
