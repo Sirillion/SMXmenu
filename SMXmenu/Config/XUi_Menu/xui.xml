@@ -4,9 +4,9 @@
 
 		// EAC:				Friendly
 
-		// VERSION:			A18b149r1
+		// VERSION:			18.r2
 
-		// BUILD:			A18b149
+		// BUILD:			A18.1B8
 
 		// DISCLAIMER:		Please be advised that this modlet is intended for use with the build mentioned above. That said it may very well be that
 							it can be used with other builds with little to no risk of failure. It all depends on the standard files being updated or not
@@ -14,7 +14,7 @@
 
 		// MOD DESCRIPTION:	The purpose of this modlet is to enhance the menu UI experience of 7 Days to Die. Please note that this modlet will enhance the
 							main and in-game menu UI's only. If	you want to enhance the in-game HUD you can supplement this modlet with SMXhud. If you want
-							to opt for a total in-game UI conversion you can supplement this modlet with SMXui.(currently in development)
+							to opt for a total in-game UI conversion you can supplement this modlet with SMXui.
 
 		// DEPENDENCIES:	None.
 

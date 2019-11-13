@@ -12,10 +12,17 @@
 		</append>
 
 
+<!--	// SMX // Global Sounds -->
+
+		<append xpath="/styles/global">
+			<style_entry name="default_uihover" 					value="Sounds/UI/ui_hover" />
+		</append>
+
+
 <!--	// SMX // Defined Icon Colors -->
 
 		<append xpath="/styles">
-			<style name="smx_color_icons">
+			<style name="smx_menu_icon_colors">
 				<style_entry name="color" 							value="[white]" />				
 				<style_entry name="hovercolor" 						value="[mediumGrey]" />				
 				<style_entry name="selectedcolor" 					value="[lightGrey]" />				

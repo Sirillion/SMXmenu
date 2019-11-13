@@ -66,7 +66,7 @@
 
 				<!--label name="SMXeditionInfo" depth="9" pos="60,-470" size="250,33" text="Current Development Version" font_size="16" color="[menuElementsLabel]" font_face="AgencyB" crispness="Never" effect="outline" upper_case="true" justify="center" pivot="center" /-->
 				<label name="SMXeditionInfo" depth="9" pos="60,-470" size="250,33" text="Stable Release Version" font_size="16" color="[menuElementsLabel]" font_face="AgencyB" crispness="Never" effect="outline" upper_case="true" justify="center" pivot="center" />
-				<label name="SMXversionInfo" depth="9" pos="60,-490" size="250,33" text="SMX-A18B149r1" font_size="16" color="[menuElementsLabel]" font_face="AgencyB" crispness="Never" effect="outline" upper_case="false" justify="center" pivot="center" />
+				<label name="SMXversionInfo" depth="9" pos="60,-490" size="250,33" text="SMX-18.1.r2" font_size="16" color="[menuElementsLabel]" font_face="AgencyB" crispness="Never" effect="outline" upper_case="false" justify="center" pivot="center" />
 
 			</window>
 		</append>
@@ -94,43 +94,44 @@
 						<sprite name="SMXpanelLine" style="smx_general_separation_line_header" />
 						<sprite name="SMXtabsNewBG" style="smx_menupanel_tabs" />
 						<sprite name="SMXpanelLine" style="smx_general_separation_line_tabs" />
+						<sprite name="SMXvpDivider" pos="600,-660" size="5,600" style="smx_general_separation_line_header" rotation="180" />
 
-						<rect name="SMXnewGame" pos="0,-60">
+						<rect name="SMXnewGame" pos="0,-77">
 							<grid rows="13" cell_width="525" cell_height="45" repeat_content="false" arrangement="vertical">
 								<rect>
-									<label depth="4" width="250" height="30" style="hover" text_key="goGameName" font_size="28" color="[white]" justify="right" pivot="topleft" tooltip_key="goGameNameDesc" />
-									<textfield name="txtGameName" depth="5" pos="289,0" width="232" height="32" pivot="topLeft" on_hover="true" />
+									<label depth="4" pos="0,-5" width="250" height="30" style="hover" text_key="goGameName" color="[white]" font_size="26" font_face="AgencyB" crispness="Never" effect="outline" upper_case="false" justify="right" pivot="topleft" tooltip_key="goGameNameDesc" />
+									<smx_gameoption_textfield_1 name="txtGameName" depth="5" pos="289,0" width="232" height="32" pivot="topLeft" on_hover="true" />
 								</rect>
 								<rect visible="{false}">
-									<label depth="4" width="250" height="30" style="hover" text_key="goGameMode" font_size="28" color="[white]" justify="right" pivot="topleft" tooltip_key="goGameModeDesc" />
-									<combobox name="cbxGameMode" pos="255,0" width="300" height="32" type="ComboBoxList&lt;GameMode&gt;" value_wrap="false" />
+									<label depth="4" pos="0,-5" width="250" height="30" style="hover" text_key="goGameMode" color="[white]" font_size="26" font_face="AgencyB" crispness="Never" effect="outline" upper_case="false" justify="right" pivot="topleft" tooltip_key="goGameModeDesc" />
+									<smx_gameoption_combobox_1 name="cbxGameMode" pos="255,0" width="300" height="32" type="ComboBoxList&lt;GameMode&gt;" value_wrap="false" />
 								</rect>
 								<rect>
-									<label depth="4" width="250" height="30" style="hover" text_key="goGameWorld" font_size="28" color="[white]" justify="right" pivot="topleft" tooltip_key="goGameWorldDesc" />
-									<combobox name="cbxWorldName" pos="255,0" width="300" height="32" type="ComboBoxList&lt;XUiC_NewContinueGame+LevelInfo&gt;" value_wrap="false" />  <!-- localization_prefix="xuiWorldName" -->
+									<label depth="4" pos="0,-5" width="250" height="30" style="hover" text_key="goGameWorld" color="[white]" font_size="26" font_face="AgencyB" crispness="Never" effect="outline" upper_case="false" justify="right" pivot="topleft" tooltip_key="goGameWorldDesc" />
+									<smx_gameoption_combobox_1 name="cbxWorldName" pos="255,0" width="300" height="32" type="ComboBoxList&lt;XUiC_NewContinueGame+LevelInfo&gt;" value_wrap="false" />  <!-- localization_prefix="xuiWorldName" -->
 								</rect>
 								<rect visible="{isnotgenerateworld}">
-									<label depth="4" width="250" height="30" style="hover" text_key="xuiMapSize" font_size="28" color="[white]" justify="right" pivot="topleft" />
+									<label depth="4" pos="0,-5" width="250" height="30" style="hover" text_key="xuiMapSize" color="[white]" font_size="26" font_face="AgencyB" crispness="Never" effect="outline" upper_case="false" justify="right" pivot="topleft" />
 									<sprite depth="3" name="backgroundMain" pos="289,0" width="232" height="32" sprite="menu_empty3px" color="[darkGrey]" type="sliced" fillcenter="true" />
-									<label name="countyName" depth="4" pos="289,-2" width="232" height="32" style="hover" font_size="28" color="[white]" justify="center" pivot="topleft" text="{mapsize}" />
+									<label name="countyName" depth="4" pos="289,-7" width="232" height="32" style="hover" text="{mapsize}" color="[white]" font_size="26" font_face="AgencyB" crispness="Never" effect="outline" upper_case="false" justify="center" pivot="topleft" />
 								</rect>
 							</grid>
 						</rect>
 
-						<rect name="SMXrwgGame" pos="0,-175" controller="WorldGenerationWindowGroup" visible="{isgenerateworld}">
+						<rect name="SMXrwgGame" pos="0,-212" controller="WorldGenerationWindowGroup" visible="{isgenerateworld}">
 							<grid rows="13" cell_width="525" cell_height="45" repeat_content="false" arrangement="vertical">
 								<rect>
-									<label depth="4" width="250" height="30" style="hover" text="Seed" text_key="xuiRwgCountyName" font_size="28" color="[white]" justify="right" pivot="topleft" tooltip_key="xuiRwgCountyNameDesc" />
+									<label depth="4" pos="0,-5" width="250" height="30" style="hover" text="Seed" text_key="xuiRwgCountyName" color="[white]" font_size="26" font_face="AgencyB" crispness="Never" effect="outline" upper_case="false" justify="right" pivot="topleft" tooltip_key="xuiRwgCountyNameDesc" />
 									<sprite name="backgroundMain" depth="3" pos="289,0" width="232" height="32" sprite="menu_empty3px" color="[darkGrey]" type="sliced" fillcenter="true" />
-									<label name="countyName" depth="4" pos="289,-2" width="232" height="32" style="hover" font_size="28" color="[white]" justify="center" pivot="topleft" />
+									<label name="countyName" depth="4" pos="289,-7" width="232" height="32" style="hover" color="[white]" font_size="26" font_face="AgencyB" crispness="Never" effect="outline" upper_case="true" justify="center" pivot="topleft" />
 								</rect>
 								<rect>
-									<label depth="4" width="250" height="30" style="hover" text="Seed" text_key="xuiRwgWorldSeed" font_size="28" color="[white]" justify="right" pivot="topleft" tooltip_key="xuiRwgWorldSeedDesc" />
-									<textfield name="seedInput" depth="5" pos="289,0" width="232" height="32" pivot="topLeft" on_hover="true" />
+									<label depth="4" pos="0,-5" width="250" height="30" style="hover" text="Seed" text_key="xuiRwgWorldSeed" color="[white]" font_size="26" font_face="AgencyB" crispness="Never" effect="outline" upper_case="false" justify="right" pivot="topleft" tooltip_key="xuiRwgWorldSeedDesc" />
+									<smx_gameoption_textfield_1 name="seedInput" depth="5" pos="289,0" width="232" height="32" pivot="topLeft" on_hover="true" />
 								</rect>
 								<rect>
-									<label depth="4" width="250" height="30" style="hover" text="World Size" text_key="xuiRwgWorldSize" font_size="28" color="[white]" justify="right" pivot="topleft" tooltip_key="xuiRwgWorldSizeDesc" />
-									<combobox name="WorldSize" depth="108" pos="255,0" width="300" height="32" type="ComboBoxList&lt;System.String&gt;" values="4096,8192" value_wrap="false" />
+									<label depth="4" pos="0,-5" width="250" height="30" style="hover" text="World Size" text_key="xuiRwgWorldSize" color="[white]" font_size="26" font_face="AgencyB" crispness="Never" effect="outline" upper_case="false" justify="right" pivot="topleft" tooltip_key="xuiRwgWorldSizeDesc" />
+									<smx_gameoption_combobox_1 name="WorldSize" depth="108" pos="255,0" width="300" height="32" type="ComboBoxList&lt;System.String&gt;" values="4096,8192" value_wrap="false" />
 								</rect>
 								<rect />
 								<rect />
@@ -148,25 +149,26 @@
 						<sprite name="SMXpanelLine" style="smx_general_separation_line_header" />
 						<sprite name="SMXtabsContinueBG" style="smx_menupanel_tabs" />
 						<sprite name="SMXpanelLine" style="smx_general_separation_line_tabs" />
+						<sprite name="SMXvpDivider" pos="600,-660" size="5,600" style="smx_general_separation_line_header" rotation="180" />
 
-						<rect name="saves" pos="0,0" size="650,590" controller="SavegamesList" style="smx_ncgame_color_coding" clear_selection_on_open="false">
-							<rect name="searchControls" depth="4" pos="82,2" size="40,495">
-								<sprite name="searchIcon" depth="4" pos="70,-22" size="28,28" style="smx_color_icons" atlas="menuIcons" sprite="smx_general_search_icon" pivot="center" />
+						<rect name="saves" pos="0,0" size="500,590" controller="SavegamesList" style="smx_ncgame_color_coding" clear_selection_on_open="false">
+							<rect name="searchControls" depth="4" pos="130,2" size="40,495">
+								<sprite name="searchIcon" depth="4" pos="70,-22" size="28,28" style="smx_menu_icon_colors" atlas="menuIcons" sprite="smx_general_search_icon" pivot="center" />
 								<smx_savegame_search name="searchInput" depth="5" pos="40,-22" size="250,30" pivot="center" />
 							</rect>
 
-							<rect name="pageControl" depth="4" pos="-120,-620" size="40,495">
+							<rect name="pageControl" depth="4" pos="-80,-610" size="40,495">
 								<panel name="searchScroll" pos="396,2" size="98,43" disableautobackground="true">
-									<button name="pageDown" depth="4" pos="10,-22" size="93,64" style="press, smx_color_icons" atlas="menuIcons" sprite="smx_general_arrow_icon" pivot="center" sound="[paging_click]" />
+									<button name="pageDown" depth="4" pos="10,-22" size="14,26" style="press, smx_menu_icon_colors" atlas="menuIcons" sprite="smx_menu_general_arrow_icon" pivot="center" sound_play_on_hover="[default_uihover]" sound="[paging_click]" />
 									<rect depth="4" pos="37,-7">
 										<label name="pageNumber" depth="5" pos="0,-5" size="30,28" text="1" font_size="26" font_face="AgencyB" crispness="Never" effect="outline" justify="center" />
 									</rect>
-									<button name="pageUp" depth="4" pos="94,-22" size="93,64" style="press, smx_color_icons" atlas="menuIcons" sprite="smx_general_arrow_icon" flip="horizontally" pivot="center" sound="[paging_click]" />
+									<button name="pageUp" depth="4" pos="94,-22" size="14,26" style="press, smx_menu_icon_colors" atlas="menuIcons" sprite="smx_menu_general_arrow_icon" flip="horizontally" pivot="center" sound_play_on_hover="[default_uihover]" sound="[paging_click]" />
 								</panel>
 							</rect>
 
-							<grid name="list" depth="2" rows="9" cols="1" pos="80,-60" height="490" cell_width="495" cell_height="61" repeat_content="true" arrangement="vertical">
-								<savegames_list_entry width="590" height="61" />
+							<grid name="list" depth="2" rows="5" cols="1" pos="80,-60" height="490" cell_width="495" cell_height="110" repeat_content="true" arrangement="vertical">
+								<smx_savegames_list_entry width="490" height="100" />
 							</grid>
 						</rect>
 					</rect>
@@ -179,7 +181,7 @@
 					</panel>
 
 					<rect name="tabsHeader" depth="0" height="39">
-						<grid name="tabButtons" depth="2" pos="3,5" rows="1" cols="4" cell_width="144" cell_height="50" repeat_content="true" arrangement="horizontal">
+						<grid name="tabButtons" depth="2" pos="20,5" rows="1" cols="4" cell_width="144" cell_height="50" repeat_content="true" arrangement="horizontal">
 							<rect>
 								<smx_simplebutton_tabs_1 name="tabButton" depth="2" pos="-1,0" width="143" height="50" font_size="34" caption_key="xuiBack" foregroundlayer="false" />
 							</rect>
@@ -189,71 +191,69 @@
 					<rect name="tabsContents" depth="2" pos="0,-37" height="611">
 						<rect tab_key="xuiGameSettingsGeneral">
 							<grid pos="6,-40" rows="13" cell_width="525" cell_height="45" repeat_content="false" arrangement="vertical">
-								<gameoption name="ServerVisibility" title="goServerVisibility" value_wrap="false" value_type="int" values="" display_names="goServerVisibility0,goServerVisibility1,goServerVisibility2" value_localization_prefix="" />
-								<gameoption name="ServerPassword" title="goPassword" value_wrap="false" value_type="string" values="" display_names="" value_localization_prefix="" is_textinput="true" password_field="true" />
-								<gameoption name="ServerMaxPlayerCount" title="goMaxPlayers" value_wrap="false" value_type="int" values="1, 2, 4, 8, 16" display_names="" value_localization_prefix="goPlayer" />
+								<smx_gameoption_1 name="ServerVisibility" title="goServerVisibility" value_wrap="false" value_type="int" values="" display_names="goServerVisibility0,goServerVisibility1,goServerVisibility2" value_localization_prefix="" />
+								<smx_gameoption_1 name="ServerPassword" title="goPassword" value_wrap="false" value_type="string" values="" display_names="" value_localization_prefix="" is_textinput="true" password_field="true" />
+								<smx_gameoption_1 name="ServerMaxPlayerCount" title="goMaxPlayers" value_wrap="false" value_type="int" values="1, 2, 4, 8, 16" display_names="" value_localization_prefix="goPlayer" />
 							</grid>
 						</rect>
 
 						<rect tab_key="xuiGameSettingsBasic">
 							<grid pos="6,-40" rows="13" cell_width="525" cell_height="45" repeat_content="false" arrangement="vertical">
-								<gameoption name="GameDifficulty" title="goDifficulty" value_wrap="false" value_type="int" values="" display_names="goDifficulty1,goDifficulty2,goDifficulty3,goDifficulty4,goDifficulty5,goDifficulty6" value_localization_prefix="" />
-								<gameoption name="DayNightLength" title="goDayLength" value_wrap="false" value_type="int" values="10, 20, 30, 40, 50, 60, 90, 120" display_names="" value_localization_prefix="goMinute" />
-								<gameoption name="DayLightLength" title="goDayLightLength" value_wrap="false" value_type="int" values="12, 14, 16, 18" display_names="" value_localization_prefix="goDayLightLengthValue" />
-								<gameoption name="BloodMoonFrequency" title="goBloodMoonFrequency" value_wrap="false" value_type="int" values="0, 1, 3, 7, 14, 30" display_names="goDisabled" value_localization_prefix="goDay" />
-								<gameoption name="BloodMoonRange" title="goBloodMoonRange" value_wrap="false" value_type="int" values="0, 1, 2, 3, 4, 7, 10, 14, 20" display_names="" value_localization_prefix="goDay" />
-								<gameoption name="BloodMoonWarning" title="goBloodMoonWarning" value_wrap="false" value_type="int" values="-1, 8, 18" display_names="goDisabled,goMorning,goEvening" value_localization_prefix="" />
-								<gameoption name="ZombieMove" title="goZombieMove" value_wrap="false" value_type="int" values="" display_names="goZMWalk,goZMJog,goZMRun,goZMSprint,goZMNightmare" value_localization_prefix="" />
-								<gameoption name="ZombieMoveNight" title="goZombieMoveNight" value_wrap="false" value_type="int" values="" display_names="goZMWalk,goZMJog,goZMRun,goZMSprint,goZMNightmare" value_localization_prefix="" />
-								<gameoption name="ZombieFeralMove" title="goZombieFeralMove" value_wrap="false" value_type="int" values="" display_names="goZMWalk,goZMJog,goZMRun,goZMSprint,goZMNightmare" value_localization_prefix="" />
-								<gameoption name="ZombieBMMove" title="goZombieBMMove" value_wrap="false" value_type="int" values="" display_names="goZMWalk,goZMJog,goZMRun,goZMSprint,goZMNightmare" value_localization_prefix="" />
-								<!--
-								<gameoption name="MaxSpawnedZombies" title="goMaxSpawnedZombies" value_wrap="false" value_type="int" values="0, 10, 30, 60" display_names="" value_localization_prefix="" />
-								<gameoption name="MaxSpawnedAnimals" title="goMaxSpawnedAnimals" value_wrap="false" value_type="int" values="0, 10, 30, 50" display_names="" value_localization_prefix="" />
-								-->
-								<gameoption name="PersistentPlayerProfiles" title="goPersistentCharacters" value_wrap="false" value_type="bool" values="" display_names="" value_localization_prefix="" />
-								<gameoption name="XPMultiplier" title="goXPMultiplier" value_wrap="false" value_type="int" values="25, 50, 75, 100, 125, 150, 175, 200, 300" display_names="" value_localization_prefix="goXPMultiplierValue" />
+								<smx_gameoption_1 name="GameDifficulty" title="goDifficulty" value_wrap="false" value_type="int" values="" display_names="goDifficulty1,goDifficulty2,goDifficulty3,goDifficulty4,goDifficulty5,goDifficulty6" value_localization_prefix="" />
+								<smx_gameoption_1 name="DayNightLength" title="goDayLength" value_wrap="false" value_type="int" values="10, 20, 30, 40, 50, 60, 90, 120" display_names="" value_localization_prefix="goMinute" />
+								<smx_gameoption_1 name="DayLightLength" title="goDayLightLength" value_wrap="false" value_type="int" values="12, 14, 16, 18" display_names="" value_localization_prefix="goDayLightLengthValue" />
+								<smx_gameoption_1 name="BloodMoonFrequency" title="goBloodMoonFrequency" value_wrap="false" value_type="int" values="0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 14, 20, 30" display_names="goDisabled" value_localization_prefix="goDay" />
+								<smx_gameoption_1 name="BloodMoonRange" title="goBloodMoonRange" value_wrap="false" value_type="int" values="0, 1, 2, 3, 4, 7, 10, 14, 20" display_names="" value_localization_prefix="goDay" />
+								<smx_gameoption_1 name="BloodMoonWarning" title="goBloodMoonWarning" value_wrap="false" value_type="int" values="-1, 8, 18" display_names="goDisabled,goMorning,goEvening" value_localization_prefix="" />
+								<smx_gameoption_1 name="ZombieMove" title="goZombieMove" value_wrap="false" value_type="int" values="" display_names="goZMWalk,goZMJog,goZMRun,goZMSprint,goZMNightmare" value_localization_prefix="" />
+								<smx_gameoption_1 name="ZombieMoveNight" title="goZombieMoveNight" value_wrap="false" value_type="int" values="" display_names="goZMWalk,goZMJog,goZMRun,goZMSprint,goZMNightmare" value_localization_prefix="" />
+								<smx_gameoption_1 name="ZombieFeralMove" title="goZombieFeralMove" value_wrap="false" value_type="int" values="" display_names="goZMWalk,goZMJog,goZMRun,goZMSprint,goZMNightmare" value_localization_prefix="" />
+								<smx_gameoption_1 name="ZombieBMMove" title="goZombieBMMove" value_wrap="false" value_type="int" values="" display_names="goZMWalk,goZMJog,goZMRun,goZMSprint,goZMNightmare" value_localization_prefix="" />
+<!--							<smx_gameoption_1 name="MaxSpawnedZombies" title="goMaxSpawnedZombies" value_wrap="false" value_type="int" values="0, 10, 30, 60" display_names="" value_localization_prefix="" />
+								<smx_gameoption_1 name="MaxSpawnedAnimals" title="goMaxSpawnedAnimals" value_wrap="false" value_type="int" values="0, 10, 30, 50" display_names="" value_localization_prefix="" />
+-->								<smx_gameoption_1 name="PersistentPlayerProfiles" title="goPersistentCharacters" value_wrap="false" value_type="bool" values="" display_names="" value_localization_prefix="" />
+								<smx_gameoption_1 name="XPMultiplier" title="goXPMultiplier" value_wrap="false" value_type="int" values="25, 50, 75, 100, 125, 150, 175, 200, 300" display_names="" value_localization_prefix="goXPMultiplierValue" />
 							</grid>
 						</rect>
 
 						<rect tab_key="xuiGameSettingsAdvanced">
 							<grid pos="6,-40" rows="13" cell_width="525" cell_height="45" repeat_content="false" arrangement="vertical">
 								<!--<gameoption name="BlockDurabilityModifier" title="goBlockDurability" value_wrap="false" value_type="int" values="25, 50, 100, 200" display_names="" value_localization_prefix="goBlockDurabilityValue" />-->
-								<gameoption name="BlockDamagePlayer" title="goBlockDamagePlayer" value_wrap="false" value_type="int" values="25, 50, 75, 100, 125, 150, 175, 200, 300" display_names="" value_localization_prefix="goBlockDamageValue" />
-								<gameoption name="BlockDamageAI" title="goBlockDamageAI" value_wrap="false" value_type="int" values="25, 50, 75, 100, 125, 150, 175, 200, 300" display_names="" value_localization_prefix="goBlockDamageValue" />
-								<gameoption name="BlockDamageAIBM" title="goBlockDamageAIBM" value_wrap="false" value_type="int" values="25, 50, 75, 100, 125, 150, 175, 200, 300" display_names="" value_localization_prefix="goBlockDamageValue" />
-								<gameoption name="LootAbundance" title="goLootAbundance" value_wrap="false" value_type="int" values="25, 50, 75, 100, 150, 200" display_names="" value_localization_prefix="goLootAbundanceValue" />
-								<gameoption name="LootRespawnDays" title="goLootRespawnDays" value_wrap="false" value_type="int" values="-1, 5, 10, 15, 20, 30, 40, 50" display_names="goDisabled" value_localization_prefix="goLootRespawnDaysValue" />
-								<gameoption name="DropOnDeath" title="goDropOnDeath" value_wrap="false" value_type="int" values="" display_names="goNone,goAll,goToolbelt,goBackpack,goDeleteAll" value_localization_prefix="" />
-								<gameoption name="DropOnQuit" title="goDropOnQuit" value_wrap="false" value_type="int" values="" display_names="goNone,goAll,goToolbelt,goBackpack" value_localization_prefix="" />
-								<gameoption name="BloodMoonEnemyCount" title="goBloodMoonEnemyCount" value_wrap="false" value_type="int" values="4, 8, 12, 16, 24, 32, 64" display_names="" value_localization_prefix="goEnemie" />
-								<gameoption name="EnemySpawnMode" title="goEnemySpawn" value_wrap="false" value_type="bool" values="" display_names="" value_localization_prefix="" />
-								<gameoption name="AirDropFrequency" title="goAirDropFrequency" value_wrap="false" value_type="int" values="0, 24, 72, 168" display_names="goDisabled" value_localization_prefix="goAirDropValue" />
-								<gameoption name="BuildCreate" title="goBuildCreate" value_wrap="false" value_type="bool" values="" display_names="" value_localization_prefix="" />
-								<gameoption name="AirDropMarker" title="goMarkAirDrops" value_wrap="false" value_type="bool" values="" display_names="" value_localization_prefix="" />
+								<smx_gameoption_1 name="BlockDamagePlayer" title="goBlockDamagePlayer" value_wrap="false" value_type="int" values="25, 50, 75, 100, 125, 150, 175, 200, 300" display_names="" value_localization_prefix="goBlockDamageValue" />
+								<smx_gameoption_1 name="BlockDamageAI" title="goBlockDamageAI" value_wrap="false" value_type="int" values="25, 33, 50, 67, 75, 100, 125, 150, 175, 200, 300" display_names="" value_localization_prefix="goBlockDamageValue" />
+								<smx_gameoption_1 name="BlockDamageAIBM" title="goBlockDamageAIBM" value_wrap="false" value_type="int" values="25, 33, 50, 67, 75, 100, 125, 150, 175, 200, 300" display_names="" value_localization_prefix="goBlockDamageValue" />
+								<smx_gameoption_1 name="LootAbundance" title="goLootAbundance" value_wrap="false" value_type="int" values="25, 33, 50, 67, 75, 100, 150, 200" display_names="" value_localization_prefix="goLootAbundanceValue" />
+								<smx_gameoption_1 name="LootRespawnDays" title="goLootRespawnDays" value_wrap="false" value_type="int" values="-1, 5, 10, 15, 20, 30, 40, 50" display_names="goDisabled" value_localization_prefix="goLootRespawnDaysValue" />
+								<smx_gameoption_1 name="DropOnDeath" title="goDropOnDeath" value_wrap="false" value_type="int" values="" display_names="goNone,goAll,goToolbelt,goBackpack,goDeleteAll" value_localization_prefix="" />
+								<smx_gameoption_1 name="DropOnQuit" title="goDropOnQuit" value_wrap="false" value_type="int" values="" display_names="goNone,goAll,goToolbelt,goBackpack" value_localization_prefix="" />
+								<smx_gameoption_1 name="BloodMoonEnemyCount" title="goBloodMoonEnemyCount" value_wrap="false" value_type="int" values="4, 6, 8, 10, 12, 16, 24, 32, 64" display_names="" value_localization_prefix="goEnemie" />
+								<smx_gameoption_1 name="EnemySpawnMode" title="goEnemySpawn" value_wrap="false" value_type="bool" values="" display_names="" value_localization_prefix="" />
+								<smx_gameoption_1 name="AirDropFrequency" title="goAirDropFrequency" value_wrap="false" value_type="int" values="0, 24, 72, 168" display_names="goDisabled" value_localization_prefix="goAirDropValue" />
+								<smx_gameoption_1 name="BuildCreate" title="goBuildCreate" value_wrap="false" value_type="bool" values="" display_names="" value_localization_prefix="" />
+								<smx_gameoption_1 name="AirDropMarker" title="goMarkAirDrops" value_wrap="false" value_type="bool" values="" display_names="" value_localization_prefix="" />
 							</grid>
 						</rect>
 
 						<rect tab_key="xuiGameSettingsMultiplayer">
 							<grid pos="6,-40" rows="13" cell_width="525" cell_height="45" repeat_content="false" arrangement="vertical">
-								<gameoption name="PlayerKillingMode" title="goPlayerKillingMode" value_wrap="false" value_type="int" values="" display_names="goPlayerKillingModeNoKilling,goPlayerKillingModeKillAlliesOnly,goPlayerKillingModeKillStrangersOnly,goPlayerKillingModeKillEveryone" value_localization_prefix="" />
-								<gameoption name="LandClaimSize" title="goLandClaimSize" value_wrap="false" value_type="int" values="21, 31, 41, 51, 71" display_names="" value_localization_prefix="goLandClaimSizeValue" />
-								<gameoption name="LandClaimDeadZone" title="goLandClaimDeadZone" value_wrap="false" value_type="int" values="0, 5, 10, 15, 20, 30, 40, 50" display_names="goLandClaimNoDeadzone" value_localization_prefix="goLandClaimDeadZoneValue" />
-								<gameoption name="LandClaimExpiryTime" title="goLandClaimExpiryTime" value_wrap="false" value_type="int" values="1, 2, 3, 4, 5, 7, 10, 30" display_names="" value_localization_prefix="goLandClaimExpiryTimeValue" />
-								<gameoption name="LandClaimDecayMode" title="goLandClaimDecayMode" value_wrap="false" value_type="int" values="" display_names="goLandClaimDecayModeSlow,goLandClaimDecayModeFast,goLandClaimDecayModeNone" value_localization_prefix="" />
-								<gameoption name="LandClaimOnlineDurabilityModifier" title="goLandClaimOnlineDurabilityModifier" value_wrap="false" value_type="int" values="0, 1, 2, 4, 8, 16, 32, 64, 128, 256" display_names="goInfinite" value_localization_prefix="goLandClaimOnlineDurabilityModifierValue" />
-								<gameoption name="LandClaimOfflineDurabilityModifier" title="goLandClaimOfflineDurabilityModifier" value_wrap="false" value_type="int" values="0, 1, 2, 4, 8, 16, 32, 64, 128, 256" display_names="goInfinite" value_localization_prefix="goLandClaimOfflineDurabilityModifierValue" />
-								<gameoption name="BedrollDeadZoneSize" title="goBedrollDeadZoneSize" value_wrap="false" value_type="int" values="0, 5, 15, 30" display_names="goLandClaimNoDeadzone" value_localization_prefix="goLandClaimDeadZoneValue" />
-								<gameoption name="BedrollExpiryTime" title="goBedrollExpiryTime" value_wrap="false" value_type="int" values="3, 7, 15, 30, 45, 60" display_names="" value_localization_prefix="goLandClaimExpiryTimeValue" />
+								<smx_gameoption_1 name="PlayerKillingMode" title="goPlayerKillingMode" value_wrap="false" value_type="int" values="" display_names="goPlayerKillingModeNoKilling,goPlayerKillingModeKillAlliesOnly,goPlayerKillingModeKillStrangersOnly,goPlayerKillingModeKillEveryone" value_localization_prefix="" />
+								<smx_gameoption_1 name="LandClaimSize" title="goLandClaimSize" value_wrap="false" value_type="int" values="21, 31, 41, 51, 71" display_names="" value_localization_prefix="goLandClaimSizeValue" />
+								<smx_gameoption_1 name="LandClaimDeadZone" title="goLandClaimDeadZone" value_wrap="false" value_type="int" values="0, 5, 10, 15, 20, 30, 40, 50" display_names="goLandClaimNoDeadzone" value_localization_prefix="goLandClaimDeadZoneValue" />
+								<smx_gameoption_1 name="LandClaimExpiryTime" title="goLandClaimExpiryTime" value_wrap="false" value_type="int" values="1, 2, 3, 4, 5, 7, 10, 30" display_names="" value_localization_prefix="goLandClaimExpiryTimeValue" />
+								<smx_gameoption_1 name="LandClaimDecayMode" title="goLandClaimDecayMode" value_wrap="false" value_type="int" values="" display_names="goLandClaimDecayModeSlow,goLandClaimDecayModeFast,goLandClaimDecayModeNone" value_localization_prefix="" />
+								<smx_gameoption_1 name="LandClaimOnlineDurabilityModifier" title="goLandClaimOnlineDurabilityModifier" value_wrap="false" value_type="int" values="0, 1, 2, 4, 8, 16, 32, 64, 128, 256" display_names="goInfinite" value_localization_prefix="goLandClaimOnlineDurabilityModifierValue" />
+								<smx_gameoption_1 name="LandClaimOfflineDurabilityModifier" title="goLandClaimOfflineDurabilityModifier" value_wrap="false" value_type="int" values="0, 1, 2, 4, 8, 16, 32, 64, 128, 256" display_names="goInfinite" value_localization_prefix="goLandClaimOfflineDurabilityModifierValue" />
+								<smx_gameoption_1 name="BedrollDeadZoneSize" title="goBedrollDeadZoneSize" value_wrap="false" value_type="int" values="0, 5, 15, 30" display_names="goLandClaimNoDeadzone" value_localization_prefix="goLandClaimDeadZoneValue" />
+								<smx_gameoption_1 name="BedrollExpiryTime" title="goBedrollExpiryTime" value_wrap="false" value_type="int" values="3, 7, 15, 30, 45, 60" display_names="" value_localization_prefix="goLandClaimExpiryTimeValue" />
 						
-								<gameoption name="PartySharedKillRange" title="goPartySharedKillRange" value_wrap="false" value_type="int" values="0, 100, 500, 1000, 5000, 10000" display_names="goDisabled" value_localization_prefix="goPartySharedKillRangeValue" />
-								<gameoption name="ServerPort" title="goPort" value_wrap="false" value_type="int" values="" display_names="" value_localization_prefix="" is_textinput="true" />
+								<smx_gameoption_1 name="PartySharedKillRange" title="goPartySharedKillRange" value_wrap="false" value_type="int" values="0, 100, 500, 1000, 5000, 10000" display_names="goDisabled" value_localization_prefix="goPartySharedKillRangeValue" />
+								<smx_gameoption_1 name="ServerPort" title="goPort" value_wrap="false" value_type="int" values="" display_names="" value_localization_prefix="" is_textinput="true" />
 
-								<gameoption name="DayCount" title="goDayCount" value_wrap="false" value_type="int" values="0, 1, 3, 5, 7, 9" display_names="goUnlimited" value_localization_prefix="goDay" />
-								<gameoption name="FragLimit" title="goFragLimit" value_wrap="false" value_type="int" values="0, 1, 5, 10, 15, 20, 25, 50" display_names="goUnlimited" value_localization_prefix="goFrag" />
-								<gameoption name="MatchLength" title="goMatchLength" value_wrap="false" value_type="int" values="0, 5, 10, 15, 20, 30, 60" display_names="goUnlimited" value_localization_prefix="goMinute" />
-								<gameoption name="RebuildMap" title="goRebuildMap" value_wrap="false" value_type="bool" values="" display_names="" value_localization_prefix="" />
-								<gameoption name="ZombiePlayers" title="goZombiePlayers" value_wrap="false" value_type="bool" values="" display_names="" value_localization_prefix="" />
+								<smx_gameoption_1 name="DayCount" title="goDayCount" value_wrap="false" value_type="int" values="0, 1, 3, 5, 7, 9" display_names="goUnlimited" value_localization_prefix="goDay" />
+								<smx_gameoption_1 name="FragLimit" title="goFragLimit" value_wrap="false" value_type="int" values="0, 1, 5, 10, 15, 20, 25, 50" display_names="goUnlimited" value_localization_prefix="goFrag" />
+								<smx_gameoption_1 name="MatchLength" title="goMatchLength" value_wrap="false" value_type="int" values="0, 5, 10, 15, 20, 30, 60" display_names="goUnlimited" value_localization_prefix="goMinute" />
+								<smx_gameoption_1 name="RebuildMap" title="goRebuildMap" value_wrap="false" value_type="bool" values="" display_names="" value_localization_prefix="" />
+								<smx_gameoption_1 name="ZombiePlayers" title="goZombiePlayers" value_wrap="false" value_type="bool" values="" display_names="" value_localization_prefix="" />
 							</grid>
 						</rect>
 
@@ -374,8 +374,8 @@
 						<smx_audiooption_1 name="InGameMusicVolumeLevel" type="ComboBoxFloat" value_increment="0.05" value_wrap="false" format_string="0%" />
 						<smx_audiooption_1 name="MenuMusicVolumeLevel" type="ComboBoxFloat" value_increment="0.05" value_wrap="false" format_string="0%" visible="{notingame}" />
 						<rect />
-						<smx_audiooption_1 name="DynamicMusicEnabled" type="ComboBoxBool" />
-						<smx_audiooption_1 name="DynamicMusicDailyTimeAllotted" type="ComboBoxFloat" value_increment="0.1" value_wrap="false" format_string="0%" />
+						<smx_audiooption_1 name="DynamicMusicEnabled" type="ComboBoxBool" visible="{notinlinux}" />
+						<smx_audiooption_1 name="DynamicMusicDailyTimeAllotted" type="ComboBoxFloat" value_increment="0.1" value_wrap="false" format_string="0%" visible="{notinlinux}" />
 						<rect />
 						<smx_audiooption_1 name="VoiceChatEnabled" type="ComboBoxBool" />
 						<smx_audiooption_1 name="VoiceVolumeLevel" type="ComboBoxFloat" value_increment="0.05" value_wrap="false" format_string="0%" />
@@ -429,16 +429,17 @@
 								<smx_videooption_1 name="VSync" type="ComboBoxList&lt;System.String&gt;" values="Off,On,Half" value_wrap="false" />
 								<rect>
 									<smx_videooption_1 name="Gamma" type="ComboBoxFloat" value_increment="0.1" value_wrap="false" format_string="0%" />
-									<smx_simplebutton_tabs_1 name="btnDefaultGamma" depth="3" pos="575, 0" width="150" height="50" caption_key="xuiDefault" font_size="28" pivot="left" />
+									<smx_simplebutton_tabs_1 name="btnDefaultGamma" depth="3" pos="575, 8" width="150" height="50" caption_key="xuiDefault" font_size="28" pivot="left" />
 								</rect>
 							</grid>
 						</rect>
 
 						<rect tab_key="xuiOptionsVideoQuality">
-							<smx_videooption_1 name="QualityPreset" pos="8,-40" type="ComboBoxList&lt;System.String&gt;" values="Low,Medium,High,Ultra,Custom" value_wrap="false" />
+							<smx_videooption_1 name="QualityPreset" pos="8,-40" type="ComboBoxList&lt;System.String&gt;" values="Lowest,Low,Medium,High,Ultra,Custom" value_wrap="false" />
 							<grid pos="8,-110" rows="11" cell_width="525" cell_height="42" repeat_content="false" arrangement="vertical">
 								<smx_videooption_1 name="AntiAliasing" type="ComboBoxBool" />
 								<smx_videooption_1 name="TextureQuality" type="ComboBoxList&lt;System.String&gt;" values="Full,Half,Quarter,Eighth" value_wrap="false" reverse_list="true" />
+								<smx_videooption_1 name="TextureFilter" type="ComboBoxList&lt;System.String&gt;" values="Low,Medium,High,Ultra,Ultra+" value_wrap="false" />
 								<smx_videooption_1 name="UMATextureQuality" type="ComboBoxList&lt;System.String&gt;" values="High,Middle,Low,Lowest" value_wrap="false" reverse_list="true" />
 								<smx_videooption_1 name="ReflectionQuality" type="ComboBoxList&lt;System.String&gt;" values="Off,Low,Middle,High,Ultra,Ultra+" value_wrap="false" />
 								<smx_videooption_1 name="ReflectedShadows" type="ComboBoxBool" />
@@ -448,8 +449,7 @@
 								<smx_videooption_1 name="ViewDistance" type="ComboBoxList&lt;System.String&gt;" values="Low,Medium,High" value_wrap="false" />
 								<smx_videooption_1 name="LODDistance" type="ComboBoxFloat" value_increment="0.05" value_wrap="false" format_string="0%" />
 								<!--smx_videooption_1 name="FieldOfView" type="ComboBoxInt" value_increment="2" value_wrap="false" /-->
-								<rect />
-								<smx_videooption_1 name="TreeQuality" type="ComboBoxList&lt;System.String&gt;" values="Low,Middle,High,Ultra" value_wrap="false" />
+								<smx_videooption_1 name="TreeQuality" type="ComboBoxList&lt;System.String&gt;" values="Lowest,Low,Middle,High,Ultra" value_wrap="false" />
 								<smx_videooption_1 name="GrassDistance" type="ComboBoxList&lt;System.String&gt;" values="Near,Normal,Far" value_wrap="false" />
 								<smx_videooption_1 name="Occlusion" type="ComboBoxBool" />
 								<!-- Image Effects -->
@@ -519,10 +519,10 @@
 					</rect>
 
 					<rect name="controlTemplate" width="560" height="32">
-						<label name="label" depth="1" pos="0,0" width="250" height="30" style="hover" font_size="28" color="[white]" font_face="AgencyB" crispness="Never" effect="outline" justify="right" pivot="topleft" />
+						<label name="label" depth="1" pos="0,-5" width="250" height="30" style="hover" font_size="26" color="[white]" font_face="AgencyB" crispness="Never" effect="outline" upper_case="false" justify="right" pivot="topleft" />
 						<sprite name="background" depth="0" pos="289,0" width="232" height="32" on_press="true" color="[black]" type="sliced" pivot="topleft" foregroundlayer="true" />
-						<label name="value" depth="1" pos="289,0" width="232" height="32" font_size="32" justify="center" pivot="topleft" />
-						<button name="unbind" pos="530,-16" width="28" height="28" style="press, hover" sprite="ui_game_symbol_x" pivot="left" sound="[paging_click]" />
+						<label name="value" depth="1" pos="289,-7" width="232" height="32" font_size="22" font_face="AgencyB" crispness="Never" effect="outline" upper_case="false" justify="center" pivot="topleft" />
+						<button name="unbind" pos="530,-16" width="28" height="28" style="press, hover, smx_menu_icon_colors" atlas="menuIcons" sprite="smx_menu_general_cancel_icon" pivot="left" sound="[paging_click]" />
 					</rect>
 
 					<rect name="tabsContents" depth="2" pos="0,-37" height="611">
@@ -580,36 +580,36 @@
 								<sprite pos="600,-350" width="750" height="500" depth="2" pivot="center" atlas="{controller_atlas}" sprite="Controller_Art_PC" color="[white]" />
 								<sprite pos="600,-350" width="750" height="500" depth="3" pivot="center" atlas="{controller_atlas}" sprite="Controller_Lines_PC" color="100,100,250" />
 
-								<label name="Menu" text="XXX" pos="735,-104" depth="4" height="32" width="250" pivot="left" justify="left" on_hover="true" />
-								<label name="RightTrigger" text="XXX" pos="940,-152" depth="4" height="32" width="250" pivot="left" justify="left" on_hover="true" />
-								<label name="RightBumper" text="XXX" pos="940,-186" depth="4" height="32" width="250" pivot="left" justify="left" on_hover="true" />
-								<label name="Action4" text="XXX" pos="940,-232" depth="4" height="32" width="250" pivot="left" justify="left" on_hover="true" />
-								<label name="Action3" text="XXX" pos="940,-259" depth="4" height="32" width="250" pivot="left" justify="left" on_hover="true" />
-								<label name="Action2" text="XXX" pos="940,-294" depth="4" height="32" width="250" pivot="left" justify="left" on_hover="true" />
-								<label name="Action1" text="XXX" pos="940,-336" depth="4" height="32" width="250" pivot="left" justify="left" on_hover="true" />
-								<label name="RightStick" text="XXX" pos="940,-392" depth="4" height="60" width="250" pivot="left" justify="left" on_hover="true" />
-								<label name="RightStickButton" text="XXX" pos="940,-442" depth="4" height="32" width="250" pivot="left" justify="left" on_hover="true" />
+								<label name="Menu" text="XXX" pos="735,-104" depth="4" height="32" width="250" font_face="AgencyB" crispness="Never" effect="outline" upper_case="false" pivot="left" justify="left" on_hover="true" />
+								<label name="RightTrigger" text="XXX" pos="940,-152" depth="4" height="32" width="250" font_face="AgencyB" crispness="Never" effect="outline" upper_case="false" pivot="left" justify="left" on_hover="true" />
+								<label name="RightBumper" text="XXX" pos="940,-186" depth="4" height="32" width="250" font_face="AgencyB" crispness="Never" effect="outline" upper_case="false" pivot="left" justify="left" on_hover="true" />
+								<label name="Action4" text="XXX" pos="940,-232" depth="4" height="32" width="250" font_face="AgencyB" crispness="Never" effect="outline" upper_case="false" pivot="left" justify="left" on_hover="true" />
+								<label name="Action3" text="XXX" pos="940,-259" depth="4" height="32" width="250" font_face="AgencyB" crispness="Never" effect="outline" upper_case="false" pivot="left" justify="left" on_hover="true" />
+								<label name="Action2" text="XXX" pos="940,-294" depth="4" height="32" width="250" font_face="AgencyB" crispness="Never" effect="outline" upper_case="false" pivot="left" justify="left" on_hover="true" />
+								<label name="Action1" text="XXX" pos="940,-336" depth="4" height="32" width="250" font_face="AgencyB" crispness="Never" effect="outline" upper_case="false" pivot="left" justify="left" on_hover="true" />
+								<label name="RightStick" text="XXX" pos="940,-392" depth="4" height="60" width="250" font_face="AgencyB" crispness="Never" effect="outline" upper_case="false" pivot="left" justify="left" on_hover="true" />
+								<label name="RightStickButton" text="XXX" pos="940,-442" depth="4" height="32" width="250" font_face="AgencyB" crispness="Never" effect="outline" upper_case="false" pivot="left" justify="left" on_hover="true" />
 
-								<label name="View" text="XXX" pos="535,-104" depth="4" height="32" width="250" pivot="right" justify="right" on_hover="true" />
-								<label name="LeftTrigger" text="XXX" pos="256,-152" depth="4" height="32" width="250" pivot="right" justify="right" on_hover="true" />
-								<label name="LeftBumper" text="XXX" pos="256,-186" depth="4" height="32" width="250" pivot="right" justify="right" on_hover="true" />
+								<label name="View" text="XXX" pos="535,-104" depth="4" height="32" width="250" font_face="AgencyB" crispness="Never" effect="outline" upper_case="false" pivot="right" justify="right" on_hover="true" />
+								<label name="LeftTrigger" text="XXX" pos="256,-152" depth="4" height="32" width="250" font_face="AgencyB" crispness="Never" effect="outline" upper_case="false" pivot="right" justify="right" on_hover="true" />
+								<label name="LeftBumper" text="XXX" pos="256,-186" depth="4" height="32" width="250" font_face="AgencyB" crispness="Never" effect="outline" upper_case="false" pivot="right" justify="right" on_hover="true" />
 
 								<rect name="xb1" visible="{isxb1}">
-									<label name="LeftStick" text="XXX" pos="256,-256" depth="4" height="32" width="250" pivot="right" justify="right" on_hover="true" />
-									<label name="LeftStickButton" text="XXX" pos="256,-324" depth="4" height="32" width="250" pivot="right" justify="right" on_hover="true" />
-									<label name="DPadUp" text="XXX" pos="256,-363" depth="4" height="32" width="250" pivot="right" justify="right" on_hover="true" />
-									<label name="DPadLeft" text="XXX" pos="256,-393" depth="4" height="32" width="250" pivot="right" justify="right" on_hover="true" />
-									<label name="DPadDown" text="XXX" pos="256,-428" depth="4" height="32" width="250" pivot="right" justify="right" on_hover="true" />
-									<label name="DPadRight" text="XXX" pos="256,-461" depth="4" height="32" width="250" pivot="right" justify="right" on_hover="true" />
+									<label name="LeftStick" text="XXX" pos="256,-256" depth="4" height="32" width="250" font_face="AgencyB" crispness="Never" effect="outline" upper_case="false" pivot="right" justify="right" on_hover="true" />
+									<label name="LeftStickButton" text="XXX" pos="256,-324" depth="4" height="32" width="250" font_face="AgencyB" crispness="Never" effect="outline" upper_case="false" pivot="right" justify="right" on_hover="true" />
+									<label name="DPadUp" text="XXX" pos="256,-363" depth="4" height="32" width="250" font_face="AgencyB" crispness="Never" effect="outline" upper_case="false" pivot="right" justify="right" on_hover="true" />
+									<label name="DPadLeft" text="XXX" pos="256,-393" depth="4" height="32" width="250" font_face="AgencyB" crispness="Never" effect="outline" upper_case="false" pivot="right" justify="right" on_hover="true" />
+									<label name="DPadDown" text="XXX" pos="256,-428" depth="4" height="32" width="250" font_face="AgencyB" crispness="Never" effect="outline" upper_case="false" pivot="right" justify="right" on_hover="true" />
+									<label name="DPadRight" text="XXX" pos="256,-461" depth="4" height="32" width="250" font_face="AgencyB" crispness="Never" effect="outline" upper_case="false" pivot="right" justify="right" on_hover="true" />
 								</rect>
 
 								<rect name="ds4" visible="{isds4}">
-									<label name="DPadUp" text="XXX" pos="256,-268" depth="4" height="32" width="250" pivot="right" justify="right" on_hover="true" />
-									<label name="DPadLeft" text="XXX" pos="256,-296" depth="4" height="32" width="250" pivot="right" justify="right" on_hover="true" />
-									<label name="DPadDown" text="XXX" pos="256,-326" depth="4" height="32" width="250" pivot="right" justify="right" on_hover="true" />
-									<label name="DPadRight" text="XXX" pos="256,-356" depth="4" height="32" width="250" pivot="right" justify="right" on_hover="true" />
-									<label name="LeftStick" text="XXX" pos="256,-392" depth="4" height="32" width="250" pivot="right" justify="right" on_hover="true" />
-									<label name="LeftStickButton" text="XXX" pos="256,-422" depth="4" height="32" width="250" pivot="right" justify="right" on_hover="true" />
+									<label name="DPadUp" text="XXX" pos="256,-268" depth="4" height="32" width="250" font_face="AgencyB" crispness="Never" effect="outline" upper_case="false" pivot="right" justify="right" on_hover="true" />
+									<label name="DPadLeft" text="XXX" pos="256,-296" depth="4" height="32" width="250" font_face="AgencyB" crispness="Never" effect="outline" upper_case="false" pivot="right" justify="right" on_hover="true" />
+									<label name="DPadDown" text="XXX" pos="256,-326" depth="4" height="32" width="250" font_face="AgencyB" crispness="Never" effect="outline" upper_case="false" pivot="right" justify="right" on_hover="true" />
+									<label name="DPadRight" text="XXX" pos="256,-356" depth="4" height="32" width="250" font_face="AgencyB" crispness="Never" effect="outline" upper_case="false" pivot="right" justify="right" on_hover="true" />
+									<label name="LeftStick" text="XXX" pos="256,-392" depth="4" height="32" width="250" font_face="AgencyB" crispness="Never" effect="outline" upper_case="false" pivot="right" justify="right" on_hover="true" />
+									<label name="LeftStickButton" text="XXX" pos="256,-422" depth="4" height="32" width="250" font_face="AgencyB" crispness="Never" effect="outline" upper_case="false" pivot="right" justify="right" on_hover="true" />
 								</rect>
 							</rect>
 						</rect>
@@ -657,6 +657,110 @@
 							<smx_simplebutton_2 name="btnNewBinding" width="200" height="40" font_size="32" pivot="center" caption_key="xuiNewBinding" />
 							<smx_simplebutton_1 name="btnGrabBinding" width="200" height="40" font_size="32" pivot="center" caption_key="xuiGrabBinding" />
 						</grid>
+					</rect>
+				</panel>
+			</window>
+		</append>
+
+
+<!--	// SMX // Player Profiles --> <!-- NOT A18 READY - DISABLED -->
+
+		<!--remove xpath="/windows/window[@name='optionsProfiles']" /-->
+
+		<append xpath="/windows">
+			<window name="SMXoptionsProfiles" style="smx_menupanel_window" anchor="CenterCenter" controller="OptionsProfiles" cursor_area="true">
+
+				<!--texture name="SMXwipHelper" style="smx_devtool_background" /-->
+
+				<panel name="SMXheaderPanel" style="smx_menupanel_header">
+					<label name="SMXheaderTitle" style="smx_menupanel_title" text_key="xuiOptionsProfiles" />
+				</panel>
+
+				<rect name="profiles" pos="0,-50" height="700" width="600" controller="ProfilesList" cursor_controllable="true">
+
+					<sprite name="SMXplayerProfilesBG" style="smx_menupanel_background" />
+					<sprite name="SMXplayerProfilesHD" style="smx_menupanel_header" />
+					<sprite name="SMXpanelLine" style="smx_general_separation_line_header" />
+					<sprite name="SMXtabsProfilesBG" style="smx_menupanel_tabs" />
+					<sprite name="SMXpanelLine" style="smx_general_separation_line_tabs" />
+
+					<rect depth="4" name="searchControls" height="40" pos="80,-0">
+						<sprite depth="8" name="backgroundMain" sprite="menu_empty" color="[white]" type="sliced" fillcenter="false" />
+
+						<sprite depth="4" name="searchIcon" style="icon30px" pos="5,-22" sprite="ui_game_symbol_search" pivot="Left"/>
+						<textfield name="searchInput" depth="5" pos="40,-22" width="250" height="30" pivot="Left" />
+				
+						<panel pos="498,0" width="98" height="43" disableautobackground="true">
+							<button depth="4" name="pageDown" style="icon30px, press" pos="17,-22" sprite="ui_game_symbol_arrow_left" pivot="center" sound="[paging_click]" />
+							<rect depth="4" pos="34,-7" >
+								<sprite name="background" style="icon30px" color="[black]" type="sliced" />
+								<label depth="5" name="pageNumber" pos="0, -3" width="30" height="28" text="1" font_size="26" justify="center"/>
+							</rect>
+							<button depth="4" name="pageUp" style="icon30px, press" pos="81,-22" sprite="ui_game_symbol_arrow_right" pivot="center" sound="[paging_click]" />
+						</panel>
+					</rect>
+			
+					<grid name="list" depth="2" rows="9" cols="3" pos="80,-60" height="590" cell_width="200" cell_height="65" repeat_content="true" arrangement="vertical" >
+						<smx_profiles_list_entry width="200" height="32" />
+					</grid>
+				</rect>
+
+				<rect pos="920,-120" width="320" height="702" depth="2" controller="ArchetypePreviewWindow">
+					<texture depth="100" name="playerPreview" material="Materials/Transparent Colored" size="256,562" globalopacity="false"/>
+				</rect>
+		
+				<rect pos="0, -710">
+					<!--simplebutton name="btnOk" depth="3" pos="400, 0" width="200" height="36" font_size="32" caption_key="xuiOk" /-->
+					<smx_simplebutton_tabs_1 name="btnProfileCreate" depth="3" pos="185,0" width="230" height="60" caption_key="xuiProfileCreate" />
+					<smx_simplebutton_tabs_1 name="btnProfileDelete" depth="3" pos="385,0" width="230" height="60" caption_key="xuiProfileDelete" />
+					<smx_simplebutton_tabs_1 name="btnProfileEdit" depth="3" pos="585,0" width="230" height="60" caption_key="xuiProfileEdit" />
+
+					<smx_simplebutton_tabs_1 name="btnOk" depth="3" pos="1020,0" width="230" height="50" caption_key="xuiOk" />
+				</rect>
+
+				<panel name="deleteProfilePanel" depth="10000" createuipanel="true" on_hover="true" disableautobackground="true">
+					<rect pos="100,-200" width="400" height="200">
+						<panel pos="-20,20" width="440" height="240" clipping="softclip" clippingsoftness="20,20" disableautobackground="true">
+							<sprite depth="0" name="backgroundMain" sprite="menu_empty" color="0,0,0,100" type="sliced" fillcenter="true" />
+						</panel>
+			
+						<panel name="header" pos="0,0" height="43" depth="1" backgroundspritename="ui_game_panel_header" bordercolor="[black]" borderthickness="3" >
+							<label style="header.name" name="panelheader" pos="6,-6" width="550" text_key="xuiDeleteProfile" />
+						</panel>
+				
+						<rect pos="0,-50" height="106">
+							<sprite depth="10" name="border" sprite="menu_empty2px" color="[black]" type="sliced" fillcenter="false" globalopacity="true" globalopacitymod="0.9" />
+							<sprite depth="0" name="backgroundMain" sprite="menu_empty3px" color="[mediumGrey]" type="sliced" fillcenter="true" globalopacitymod="2" />
+					
+							<label name="deleteText" pos="10,-8" width="380" height="100" pivot="topleft" justify="left" depth="2" />
+						</rect>
+						<rect pos="0, -164">
+							<smx_simplebutton_tabs_1 name="btnCancel" depth="3" pos="0, 0" width="180" height="36" font_size="32" caption_key="xuiCancel" />
+							<smx_simplebutton_tabs_1 name="btnConfirm" depth="3" pos="400, 0" pivot="right" width="180" height="36" font_size="32" caption_key="btnConfirm" />
+						</rect>
+					</rect>
+				</panel>
+
+				<panel name="createProfilePanel" depth="10000" createuipanel="true" on_hover="true" disableautobackground="true">
+					<rect pos="100,-200" width="400" height="154">
+						<panel pos="-20,20" width="440" height="196" clipping="softclip" clippingsoftness="20,20" disableautobackground="true">
+							<sprite depth="0" name="backgroundMain" sprite="menu_empty" color="0,0,0,100" type="sliced" fillcenter="true" />
+						</panel>
+			
+						<panel name="header" pos="0,0" height="43" depth="1" backgroundspritename="ui_game_panel_header" bordercolor="[black]" borderthickness="3" >
+							<label style="header.name" name="panelheader" pos="6,-6" width="550" text_key="xuiCreateProfileHeader" />
+						</panel>
+				
+						<rect pos="0,-50" height="60">
+							<sprite depth="10" name="border" sprite="menu_empty2px" color="[black]" type="sliced" fillcenter="false" globalopacity="true" globalopacitymod="0.9" />
+							<sprite depth="0" name="backgroundMain" sprite="menu_empty3px" color="[mediumGrey]" type="sliced" fillcenter="true" globalopacitymod="2" />
+					
+							<textfield name="createProfileName" depth="5" pos="20,-30" width="360" height="30" pivot="left" />
+						</rect>
+						<rect pos="0, -118">
+							<smx_simplebutton_tabs_1 name="btnCancel" depth="3" pos="0, 0" width="180" height="36" font_size="32" caption_key="xuiCancel" />
+							<smx_simplebutton_tabs_1 name="btnConfirm" depth="3" pos="400, 0" pivot="right" width="180" height="36" font_size="32" caption_key="xuiProfileCreate" />
+						</rect>
 					</rect>
 				</panel>
 			</window>

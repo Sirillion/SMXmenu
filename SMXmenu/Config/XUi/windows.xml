@@ -22,7 +22,7 @@
 
 				<!--label name="SMXeditionInfo" depth="9" pos="60,-470" size="250,33" text="Current Development Version" font_size="16" color="[menuElementsLabel]" font_face="AgencyB" crispness="Never" effect="outline" upper_case="true" justify="center" pivot="center" /-->
 				<label name="SMXeditionInfo" depth="9" pos="60,-470" size="250,33" text="Stable Release Version" font_size="16" color="[menuElementsLabel]" font_face="AgencyB" crispness="Never" effect="outline" upper_case="true" justify="center" pivot="center" />
-				<label name="SMXversionInfo" depth="9" pos="60,-490" size="250,33" text="SMX-A18B149r1" font_size="16" color="[menuElementsLabel]" font_face="AgencyB" crispness="Never" effect="outline" upper_case="false" justify="center" pivot="center" />
+				<label name="SMXversionInfo" depth="9" pos="60,-490" size="250,33" text="SMX-18.1.r2" font_size="16" color="[menuElementsLabel]" font_face="AgencyB" crispness="Never" effect="outline" upper_case="false" justify="center" pivot="center" />
 
 			</window>
 		</append>
