@@ -1,15 +1,4 @@
-<configs>
-
-<!--	// SMX // Global Colors -->
-
-		<append xpath="/styles/global">
-			<style_entry name="menuElementsMenuBG"					value="0,0,0" />
-			<style_entry name="menuElementsMenuLine"				value="128,128,128" />
-			<style_entry name="menuElementsMenuBTN"					value="175,30,25" />
-			<style_entry name="menuElementsLBLPri"					value="255,255,255" />
-			<style_entry name="menuElementsLBLSec"					value="128,128,128" />
-		</append>
-
+<SMXmenu name="styles.xml">
 
 <!--	// SMX // Menu Button -->
 
@@ -21,4 +10,4 @@
 			</style>
 		</append>
 
-</configs>
+</SMXmenu>

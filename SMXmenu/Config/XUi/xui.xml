@@ -1,4 +1,4 @@
-<configs>
+<SMXmenu name="xui.xml">
 
 <!--	// SMX // In-game Menu -->
 
@@ -11,4 +11,4 @@
 			<window name="SMXcleanBG" />
 		</append>
 
-</configs>
+</SMXmenu>

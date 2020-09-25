@@ -1,12 +1,12 @@
-<configs>
+<SMXmenu name="MENU/xui.xml">
 
 <!--	// MODLET:			SMXmenu
 
 		// EAC:				Friendly
 
-		// VERSION:			18.3.r1
+		// VERSION:			19.1.Release1
 
-		// BUILD:			A18.3B4
+		// BUILD:			A19.1
 
 		// DISCLAIMER:		Please be advised that this modlet is intended for use with the build mentioned above. That said it may very well be that
 							it can be used with other builds with little to no risk of failure. It all depends on the standard files being updated or not
@@ -16,25 +16,33 @@
 							main and in-game menu UI's only. If	you want to enhance the in-game HUD you can supplement this modlet with SMXhud. If you want
 							to opt for a total in-game UI conversion you can supplement this modlet with SMXui.
 
-		// DEPENDENCIES:	None.
+		// DEPENDENCIES:	.
 
-		// TERMS OF USE:	You are allowed to use this modlet as is for your own personal use and/or distribute said modlet bundled with something of your
-							own creation as long as all the files of this modlet remain unaltered and you do not claim credit for creating the modlet itself
-							or any of the files provided with it.
+		// TERMS OF USE:	You are allowed to use this modlet as is for your own personal use and/or on a server you run and/or administrate.
+		
+							You are under no circumstance allowed to distribute any SMX and/or ZMX branded modlets without written consent from the developer.
 
-							You are welcome, but not required, to inform the developer of this modlet should you wish to bundle and re-distribute said modlet
-							as described above.
+							If you wish to distribute SMX and/or ZMX branded modlets as part of your own project and consent have been given you are required
+							to do so in such a way so that all the files of the SMX and/or ZMX modlet or modlets in question remain unaltered and you cannot
+							under any circumstance claim credit for creating the modlet or modlets or any of the files provided with it/them.
+							
+							If consent is given you are required to make the changes as a new modlet that injects into the modlet in question and
+							keeping load order in mind it is to be named so that it loads AFTER the original modlet. The original modlet shall be distributed
+							as is with no change to its files what so ever.
 
-							You are not allowed to use any of the assets bundled with this modlet in other projects where said modlet is not included
-							and credited. This restriction applies to all files that this modlet consist of.
+							If consent is given it is only given on a case to case basis and those that receive consent cannot pass that consent on to another
+							party or project. Nor will the consent pass on to other creators that opt to include consented work into their project.
 
-							You are required to inform and ask permission from the developer of this modlet should you wish to make changes to any files
-							provided with the intention to bundle and/or distribute.
+							You are not allowed to use any of the assets bundled with SMX and/or ZMX branded modlets in other projects. This restriction
+							applies to all files that the SMX and/or ZMX modlets consist of.
 
-							Should permission be granted you are required to make the changes as a new modlet that injects into the modlet in question and
-							keeping load order in mind. The original modlet shall be distributed as is with no change to its files whatsoever.
+							You are required to seek special consent from the developer should you wish to make changes to any asset files provided with the
+							SMX and/or ZMX branded modlets.
 
-		// CREDITS:			Sirillion (author)
+							You are required to inform the developer when your project that contains any SMX and/or ZMX modlet or modlets have been	made
+							available to the public.
+
+		// CREDITS:			Sirillion (developer, author)
 -->
 
 <!--	// SMX // Hud Logo -->
@@ -60,4 +68,13 @@
 
 		<setattribute xpath="/xui/ruleset[@name='default']/window_group[@name='editingTools']/window[@name='editingTools']" name="anchor">LeftCenter</setattribute>
 
-</configs>
+
+<!--	// SMX // MainMenu Window -->
+
+		<set xpath="/xui/ruleset[@name='default']/window_group[@name='mainMenu']">
+			<window name="mainMenu" anchor="LeftCenter" />
+			<!--window name="currentProfile" anchor="CenterCenter" /-->
+			<window name="changeLogInfoWindow" anchor="RightCenter" />
+		</set>
+
+</SMXmenu>

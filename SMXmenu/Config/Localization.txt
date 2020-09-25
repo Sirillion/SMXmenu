@@ -1,0 +1,6 @@
+Key,File,Type,UsedInMainMenu,NoTranslate,english,Context / Alternate Text,german,latam,french,italian,japanese,koreana,polish,brazilian,russian,turkish,schinese,tchinese,spanish
+xuiMenuChangeLogHeader,UI,Menu,x,,ChangeLog...
+xuiMenuChangeLog1,UI,Menu,x,,[AF1E19]*[-] SMXmenu: Added a ChangeLog window to the main menu window group.\n[AF1E19]*[-] SMXmenu: Added a pivot to the main menu forcing it to populate from the bottom.\n[AF1E19]*[-] SMXmenu: Added a pivot to the options menu forcing it to populate from the bottom.\n[AF1E19]*[-] SMXmenu: Added a pivot to the in-game menu forcing it to populate from the bottom.\n[AF1E19]*[-] SMXmenu: Moved version branch and number to localization.,,,,,
+xuiMenuChangeLog2,UI,Menu,x,,[AF1E19]*[-] SMXmenu: Fixed texture streaming option bug.\n[AF1E19]*[-] SMXui: Added a modlet for the third forge slot. Delete for a pure vanilla experience.\n[AF1E19]*[-] SMXui: Fixed a small bug with the big bag modlets.\n[AF1E19]*[-] SMXhud: Increased toolbelt to 10 slots up from 8. (New feature in A19.1)\n[AF1E19]*[-] SMXhud: Unlocked the timer caption for testing. (Experimental),,,,,
+smxCurrentVersionBranch,UI,Menu,x,,CURRENT STABLE VERSION
+smxCurrentVersionNumber,UI,Menu,x,,A19.1.Release1

@@ -1,39 +1,9 @@
-<configs>
-
-<!--	// SMX // Global Colors -->
-
-		<append xpath="/styles/global">
-			<style_entry name="menuElementsMenuBG"					value="0,0,0" />
-			<style_entry name="menuElementsMenuLine"				value="128,128,128" />
-			<style_entry name="menuElementsMenuBTN"					value="175,30,25" />
-
-			<style_entry name="menuElementsBG"						value="0,0,0" />
-			<style_entry name="menuElementsHDR"						value="175,30,25" />
-			<style_entry name="menuElementsHDRLine"					value="255,255,255" />
-
-			<style_entry name="menuElementsLBLPri"					value="255,255,255" />
-			<style_entry name="menuElementsLBLSec"					value="128,128,128" />
-
-			<style_entry name="menuElementsTipBRDR"					value="255,0,0" />
-			<style_entry name="menuElementsTipBG"					value="0,0,0" />
-		</append>
-
+<SMXmenu name="MENU/styles.xml">
 
 <!--	// SMX // Global Sounds -->
 
 		<append xpath="/styles/global">
 			<style_entry name="default_uihover" 					value="Sounds/UI/ui_hover" />
-		</append>
-
-
-<!--	// SMX // Defined Icon Colors -->
-
-		<append xpath="/styles">
-			<style name="smx_menu_icon_colors">
-				<style_entry name="color" 							value="[white]" />				
-				<style_entry name="hovercolor" 						value="[mediumGrey]" />				
-				<style_entry name="selectedcolor" 					value="[lightGrey]" />				
-			</style>
 		</append>
 
 
@@ -44,20 +14,6 @@
 				<style_entry name="width" 							value="230" />				
 				<style_entry name="height" 							value="60" />				
 				<style_entry name="pivot" 							value="center" />				
-			</style>
-		</append>
-
-
-<!-- 	// SMX // SMX Dev Tools -->
-
-		<append xpath="/styles">
-			<style name="smx_devtool_background" 					type="texture">
-				<style_entry name="depth" 							value="1" />
-				<style_entry name="texture" 						value="@modfolder:Textures/menu/smx_wip_bg.png" />
-				<style_entry name="anchor_left" 					value="#cam,0,-5" />
-				<style_entry name="anchor_bottom" 					value="#cam,0,-5" />
-				<style_entry name="anchor_right" 					value="#cam,1,5" />
-				<style_entry name="anchor_top" 						value="#cam,1,5" />
 			</style>
 		</append>
 
@@ -97,9 +53,8 @@
 				<style_entry name="depth" 							value="4" />
 				<style_entry name="pos" 							value="0,15" />
 				<style_entry name="size" 							value="1250,80" />
-				<style_entry name="atlas" 							value="uiAtlas" />
-				<style_entry name="sprite" 							value="smx_menu_panel_header" />
-				<style_entry name="color" 							value="[menuElementsHDR]" />
+				<style_entry name="sprite" 							value="smxlib_ui_game_element_panel_header" />
+				<style_entry name="color" 							value="[SMXlibElementsHDR]" />
 				<style_entry name="globalopacitymod" 				value="1.8" />
 			</style>
 		</append>
@@ -109,9 +64,8 @@
 				<style_entry name="depth" 							value="2" />
 				<style_entry name="pos" 							value="0,15" />
 				<style_entry name="size" 							value="1250,765" />
-				<style_entry name="atlas" 							value="uiAtlas" />
-				<style_entry name="sprite" 							value="smx_menu_panel_background" />
-				<style_entry name="color" 							value="[menuElementsBG]" />
+				<style_entry name="sprite" 							value="smxlib_ui_game_element_panel_background" />
+				<style_entry name="color" 							value="[SMXlibElementsBG]" />
 				<style_entry name="globalopacitymod" 				value="1.5" />
 			</style>
 		</append>
@@ -123,7 +77,7 @@
 				<style_entry name="pos" 							value="0,-5" />
 				<style_entry name="size" 							value="1250,80" />
 				<style_entry name="font_size" 						value="36" />
-				<style_entry name="color" 							value="[menuElementsLBLPri]" />
+				<style_entry name="color" 							value="[SMXlibElementsLBLPri]" />
 				<style_entry name="upper_case" 						value="true" />
 				<style_entry name="crispness" 						value="Never" />
 				<style_entry name="effect" 							value="outline" />
@@ -138,9 +92,8 @@
 				<style_entry name="depth" 							value="4" />
 				<style_entry name="pos" 							value="15,-49" />
 				<style_entry name="size" 							value="1230,52" />
-				<style_entry name="atlas" 							value="uiAtlas" />
-				<style_entry name="sprite" 							value="smx_menu_tabs_background" />
-				<style_entry name="color" 							value="[menuElementsBG]" />
+				<style_entry name="sprite" 							value="smxlib_ui_game_element_tabs_background" />
+				<style_entry name="color" 							value="[SMXlibElementsBG]" />
 				<style_entry name="globalopacitymod" 				value="1.5" />
 			</style>
 		</append>
@@ -150,12 +103,11 @@
 				<style_entry name="depth" 							value="5" />
 				<style_entry name="pos" 							value="20,-50" />
 				<style_entry name="size" 							value="5,1210" />
-				<style_entry name="atlas" 							value="uiAtlas" />
-				<style_entry name="sprite" 							value="smx_menu_panel_separate_line" />
-				<style_entry name="color" 							value="[menuElementsHDRLine]" />
+				<style_entry name="sprite" 							value="smxlib_ui_element_vertical_separation_line" />
+				<style_entry name="color" 							value="[SMXlibElementsLine]" />
 				<style_entry name="rotation" 						value="90" />
 				<!--style_entry name="flip" 						value="horizontally" /-->
-				<style_entry name="globalopacitymod" 				value="1.5" />
+				<style_entry name="globalopacitymod" 				value="1.2" />
 			</style>
 		</append>
 
@@ -164,13 +116,12 @@
 				<style_entry name="depth" 							value="5" />
 				<style_entry name="pos" 							value="20,-103" />
 				<style_entry name="size" 							value="5,1210" />
-				<style_entry name="atlas" 							value="uiAtlas" />
-				<style_entry name="sprite" 							value="smx_menu_panel_separate_line" />
-				<style_entry name="color" 							value="[menuElementsHDRLine]" />
+				<style_entry name="sprite" 							value="smxlib_ui_element_vertical_separation_line" />
+				<style_entry name="color" 							value="[SMXlibElementsLine]" />
 				<style_entry name="rotation" 						value="90" />
 				<!--style_entry name="flip" 						value="horizontally" /-->
-				<style_entry name="globalopacitymod" 				value="1.5" />
+				<style_entry name="globalopacitymod" 				value="1.2" />
 			</style>
 		</append>
 
-</configs>
+</SMXmenu>
