@@ -466,6 +466,7 @@
 								<smx_videooption_1 name="Particles" type="ComboBoxFloat" value_increment="0.10" value_wrap="false" format_string="0%" />
 								<smx_videooption_1 name="ViewDistance" type="ComboBoxList&lt;System.String&gt;" values="Low,Medium,High" localization_prefix="xuiOptionsVideoPresets" value_wrap="false" />
 								<smx_videooption_1 name="LODDistance" type="ComboBoxFloat" value_increment="0.05" value_wrap="false" format_string="0%" />
+								<rect />
 								<smx_videooption_1 name="TerrainQuality" type="ComboBoxList&lt;System.String&gt;" values="Lowest,Low,Medium,High,Ultra" localization_prefix="xuiOptionsVideoPresets" value_wrap="false" />
 								<smx_videooption_1 name="GrassDistance" type="ComboBoxList&lt;System.String&gt;" values="Lowest,Low,Medium,High" localization_prefix="xuiOptionsVideoPresets" value_wrap="false" />
 								<smx_videooption_1 name="ObjectQuality" type="ComboBoxList&lt;System.String&gt;" values="Lowest,Low,Medium,High,Ultra" localization_prefix="xuiOptionsVideoPresets" value_wrap="false" />
@@ -661,6 +662,114 @@
 							<smx_simplebutton_tabs_1 name="btnNewBinding" width="200" height="50" font_size="24" pivot="center" caption_key="xuiNewBinding" />
 							<smx_simplebutton_tabs_1 name="btnGrabBinding" width="200" height="50" font_size="24" pivot="center" caption_key="xuiGrabBinding" />
 						</grid>
+					</rect>
+				</panel>
+			</window>
+		</append>
+
+
+<!--	// SMX // Player Profiles --> <!-- NOT A19 READY - DISABLED -->
+
+		<!--remove xpath="/windows/window[@name='optionsProfiles']" /-->
+
+		<append xpath="/windows">
+			<window name="SMXoptionsProfiles" style="smx_menupanel_window" anchor="CenterCenter" controller="OptionsProfiles" cursor_area="true">
+
+				<texture name="SMXwipHelper" style="smx_devtool_background" />
+
+				<panel name="SMXheaderPanel" style="smx_menupanel_header">
+					<sprite name="SMXplayerProfilesBG" style="smx_menupanel_background" />
+					<sprite name="SMXplayerProfilesHD" style="smx_menupanel_header_background" />
+					<sprite name="SMXpanelLine" style="smx_menupanel_header_separation" />
+					<sprite name="SMXtabsProfilesBG" style="smx_menupanel_tabs" />
+					<sprite name="SMXpanelLine" style="smx_menupanel_tabs_separation" />
+					<label name="SMXheaderTitle" style="smx_menupanel_title" text_key="xuiOptionsProfiles" />
+				</panel>
+
+				<rect name="profiles" pos="0,-50" height="700" width="600" controller="ProfilesList" cursor_controllable="true">
+
+					<rect depth="4" name="searchControls" height="40" pos="80,-0">
+						<sprite depth="8" name="backgroundMain" sprite="menu_empty" color="[white]" type="sliced" fillcenter="false" />
+
+						<sprite depth="4" name="searchIcon" style="icon30px" pos="5,-22" sprite="ui_game_symbol_search" pivot="Left"/>
+						<textfield name="searchInput" depth="5" pos="40,-22" width="250" height="30" pivot="Left" />
+				
+						<panel pos="498,0" width="98" height="43" disableautobackground="true">
+							<button depth="4" name="pageDown" style="icon30px, press" pos="17,-22" sprite="ui_game_symbol_arrow_left" pivot="center" sound="[paging_click]" />
+							<rect depth="4" pos="34,-7" >
+								<sprite name="background" style="icon30px" color="[black]" type="sliced" />
+								<label depth="5" name="pageNumber" pos="0, -3" width="30" height="28" text="1" font_size="26" justify="center"/>
+							</rect>
+							<button depth="4" name="pageUp" style="icon30px, press" pos="81,-22" sprite="ui_game_symbol_arrow_right" pivot="center" sound="[paging_click]" />
+						</panel>
+					</rect>
+			
+					<grid name="list" depth="2" rows="5" cols="1" pos="80,-60" height="590" cell_width="200" cell_height="65" repeat_content="true" arrangement="vertical" >
+						<smx_profiles_list_entry width="200" height="32" />
+					</grid>
+				</rect>
+
+				<rect pos="920,-120" width="320" height="702" depth="2" controller="ArchetypePreviewWindow">
+					<sprite name="SMXmainMenuBG" depth="2" pos="0,0" size="408,1300" sprite="smxlib_ui_game_element_menu_background" color="[SMXlibElementsBG]" pivot="center" globalopacitymod="1.2" />
+					<texture name="playerPreview" depth="100" size="256,562" material="Materials/Transparent Colored" globalopacity="false"/>
+				</rect>
+		
+				<rect pos="0, -710">
+					<!--simplebutton name="btnOk" depth="3" pos="400, 0" width="200" height="36" font_size="32" caption_key="xuiOk" /-->
+					<smx_simplebutton_tabs_1 name="btnProfileCreate" depth="3" pos="185,0" width="230" height="60" caption_key="xuiProfileCreate" />
+					<smx_simplebutton_tabs_1 name="btnProfileDelete" depth="3" pos="385,0" width="230" height="60" caption_key="xuiProfileDelete" />
+					<smx_simplebutton_tabs_1 name="btnProfileEdit" depth="3" pos="585,0" width="230" height="60" caption_key="xuiProfileEdit" />
+
+					<smx_simplebutton_tabs_1 name="btnOk" depth="3" pos="1020,0" width="230" height="50" caption_key="xuiOk" />
+				</rect>
+
+				<panel name="deleteProfilePanel" depth="10000" createuipanel="true" on_hover="true" disableautobackground="true">
+					<rect pos="100,-200" width="400" height="200">
+						<panel pos="-20,20" width="440" height="240" clipping="softclip" clippingsoftness="20,20" disableautobackground="true">
+							<sprite depth="0" name="backgroundMain" sprite="menu_empty" color="0,0,0,100" type="sliced" fillcenter="true" />
+						</panel>
+			
+						<panel name="header" pos="0,0" height="43" depth="1" backgroundspritename="ui_game_panel_header" bordercolor="[black]" borderthickness="3" >
+							<label style="header.name" name="panelheader" pos="6,-6" width="550" text_key="xuiDeleteProfile" />
+						</panel>
+				
+						<rect pos="0,-50" height="106">
+							<sprite depth="10" name="border" sprite="menu_empty2px" color="[black]" type="sliced" fillcenter="false" globalopacity="true" globalopacitymod="0.9" />
+							<sprite depth="0" name="backgroundMain" sprite="menu_empty3px" color="[mediumGrey]" type="sliced" fillcenter="true" globalopacitymod="2" />
+					
+							<label name="deleteText" pos="10,-8" width="380" height="100" pivot="topleft" justify="left" depth="2" />
+						</rect>
+						<rect pos="0, -164">
+							<smx_simplebutton_tabs_1 name="btnCancel" depth="3" pos="0, 0" width="180" height="36" font_size="32" caption_key="xuiCancel" />
+							<smx_simplebutton_tabs_1 name="btnConfirm" depth="3" pos="400, 0" pivot="right" width="180" height="36" font_size="32" caption_key="btnConfirm" />
+						</rect>
+					</rect>
+				</panel>
+
+				<panel name="createProfilePanel" depth="10000" createuipanel="true" on_hover="true" disableautobackground="true">
+					<rect pos="100,-200" width="600" height="218">
+
+						<texture name="SMXwipHelper" style="smx_devtool_background" />
+
+						<sprite name="SMXmenuPanelBackground" pos="-25,70" size="600,218" style="smx_menupanel_background" />
+						<sprite name="SMXmenuPanelHeader" pos="-25,70" size="600,80" style="smx_menupanel_header_background" />
+						<sprite name="SMXseparationLineHeader" pos="-2,4" size="5,560" style="smx_menupanel_header_separation" />
+
+						<panel pos="-20,20" width="640" height="258" clipping="softclip" clippingsoftness="20,20" disableautobackground="true">
+							<!--sprite depth="0" name="backgroundMain" sprite="menu_empty" color="0,0,0,100" type="sliced" fillcenter="true" /-->
+						</panel>
+			
+						<panel name="header" pos="0,0" height="43" depth="1" backgroundspritename="ui_game_panel_header" bordercolor="[black]" borderthickness="3" disableautobackground="true">
+							<label name="panelheader" pos="0,50" width="550" style="smx_menupanel_title" text_key="xuiCreateProfileHeader" />
+						</panel>
+				
+						<rect pos="0,-30" height="60">
+							<smx_createprofile_textfield_1 name="createProfileName" depth="6" pos="280,-30" width="360" height="30" pivot="center" />
+						</rect>
+						<rect depth="6" pos="0,-118">
+							<smx_simplebutton_tabs_1 name="btnCancel" depth="3" pos="160,0" width="144" height="50" font_size="24" pivot="center" caption_key="xuiCancel" />
+							<smx_simplebutton_tabs_1 name="btnConfirm" depth="3" pos="400,0" width="180" height="50" font_size="24" pivot="center" caption_key="xuiProfileCreate" />
+						</rect>
 					</rect>
 				</panel>
 			</window>
