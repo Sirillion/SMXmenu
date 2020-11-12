@@ -8,7 +8,7 @@
 <!--	// SMX // Clean Background -->
 
 		<append xpath="/xui/ruleset[@name='default']/window_group[@name='ingameMenu']">
-			<window name="SMXcleanBG" />
+			<window name="SMXmenuCleanBG" />
 		</append>
 
 </SMXmenu>

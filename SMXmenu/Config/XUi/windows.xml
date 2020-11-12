@@ -31,7 +31,7 @@
 <!-- 	// SMX // Clean Background -->
 
 		<append xpath="/windows">
-			<window name="SMXcleanBG" style="nonpaging.window" controller="WindowNonPagingHeader" />
+			<window name="SMXmenuCleanBG" style="nonpaging.window" controller="WindowNonPagingHeader" />
 		</append>
 
 </SMXmenu>

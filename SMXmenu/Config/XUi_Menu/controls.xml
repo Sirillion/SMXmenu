@@ -58,6 +58,28 @@
 			</smx_simplebutton_2>
 		</append>
 
+		<append xpath="/controls">
+			<smxmenu_respawnbutton_bed>
+				<rect name="${name}" depth="${depth|3}" pos="${pos|0,0}" width="${width|200}" height="${height|32}" enabled_font_color="${enabled_font_color|[labelColor]}" disabled_font_color="${disabled_font_color|[disabledLabelColor]}" controller="SimpleButton" visible="${visible|true}" font_size_default="${height-32|16}" font_size_hover="${height-30|24}" button_enabled="${enabled|true}">
+					<button name="clickable" pos="0,0" size="120,120" sprite="smxlib_ui_element_slot_frame_wide" defaultcolor="${defaultcolor|[lightGrey]}" disabledcolor="[darkGrey]" hovercolor="${hovercolor|[SMXlibElementsButtons]}" foregroundlayer="${foregroundlayer|true}" type="sliced" hoverscale="1.0" pivot="center" tooltip_key="${tooltip_key|lblSpawnOnBedroll}" sound_play_on_hover="[default_hover]" sound="${sound|[default_click]}" /> 
+					<sprite name="background" depth="1" pos="0,0" size="98,98" sprite="menu_empty" color="[SMXlibElementsSlotBackground]" type="sliced" globalopacitymod="0.8" pivot="center" />
+					<sprite name="icon" depth="2" pos="0,0" size="100,100" atlas="itemiconatlas" sprite="bedroll" pivot="center" />
+					<label name="btnLabel" depth="2" pos="0,${Round(1-height/2,0)|-16}" width="${width|200}" height="${height-2|30}" text="" text_key="${caption_key|}" font_size="${font_size|28}" crispness="Never" effect="outline" effect_distance="1,1" upper_case="true" pivot="${pivot|left}" justify="${justify|center}" parse_actions="${parse_actions|false}" />
+				</rect>
+			</smxmenu_respawnbutton_bed>
+		</append>
+
+		<append xpath="/controls">
+			<smxmenu_respawnbutton_near>
+				<rect name="${name}" depth="${depth|3}" pos="${pos|0,0}" width="${width|200}" height="${height|32}" enabled_font_color="${enabled_font_color|[labelColor]}" disabled_font_color="${disabled_font_color|[disabledLabelColor]}" controller="SimpleButton" visible="${visible|true}" font_size_default="${height-32|16}" font_size_hover="${height-30|24}" button_enabled="${enabled|true}">
+					<button name="clickable" depth="1" pos="0,0" size="120,120" sprite="smxlib_ui_element_slot_frame_wide" flip="vertically" defaultcolor="${defaultcolor|[lightGrey]}" disabledcolor="[darkGrey]" hovercolor="${hovercolor|[SMXlibElementsButtons]}" foregroundlayer="${foregroundlayer|true}" type="sliced" hoverscale="1.0" pivot="center" tooltip_key="${tooltip_key|}" sound_play_on_hover="[default_hover]" sound="${sound|[default_click]}" /> 
+					<sprite name="background" depth="1" pos="0,0" size="98,98" sprite="menu_empty" color="[SMXlibElementsSlotBackground]" type="sliced" globalopacitymod="0.8" pivot="center" />
+					<sprite name="icon" depth="2" pos="0,0" size="100,100" atlas="itemiconatlas" sprite="vaultHatch_v1" pivot="center" />
+					<label name="btnLabel" depth="2" pos="0,${Round(1-height/2,0)|-16}" width="${width|200}" height="${height-2|30}" text="${caption|}" text_key="${caption_key|}" font_size="${font_size|28}" crispness="Never" effect="outline" effect_distance="1,1" upper_case="true" pivot="${pivot|left}" justify="${justify|center}" parse_actions="${parse_actions|false}" />
+				</rect>
+			</smxmenu_respawnbutton_near>
+		</append>
+
 
 <!--	// SMX // Tab Buttons -->
 
