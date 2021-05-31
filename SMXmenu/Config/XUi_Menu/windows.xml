@@ -338,6 +338,7 @@
 					<smx_mainmenubutton_2 name="btnAudio" style="smx_menu_button" caption_key="xuiBtnOptionsAudio" overflow="ShrinkContent" />
 					<smx_mainmenubutton_3 name="btnControls" style="smx_menu_button" caption_key="xuiBtnOptionsControls" overflow="ShrinkContent" />
 					<smx_mainmenubutton_1 name="btnAccount" style="smx_menu_button" caption_key="xuiBtnOptionsAccount" visible="{notreleaseingame}" overflow="ShrinkContent" />
+					<smx_mainmenubutton_3 name="btnTwitch" style="smx_menu_button" caption_key="xuiBtnOptionsTwitch" visible="{ingamenoteditor}" overflow="ShrinkContent" />
 					<rect><sprite name="SMXmenuSeparationLine" depth="3" pos="-140,-24" size="301,5" sprite="smxlib_ui_game_element_horizontal_separation_line" color="[SMXlibElementsLineMenu]" /></rect>
 					<smx_mainmenubutton_2 name="btnProfiles" style="smx_menu_button" caption_key="xuiBtnOptionsProfiles" visible="{notingame}" overflow="ShrinkContent" />
 					<smx_mainmenubutton_3 name="btnBack" style="smx_menu_button" caption_key="xuiBack" visible="{ingame}" overflow="ShrinkContent" />
