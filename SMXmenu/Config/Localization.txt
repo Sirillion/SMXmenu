@@ -1,5 +1,5 @@
 Key,File,Type,UsedInMainMenu,NoTranslate,english,Context / Alternate Text,german,latam,french,italian,japanese,koreana,polish,brazilian,russian,turkish,schinese,tchinese,spanish
 xuiChangeLogHeaderMENU,UI,Menu,x,,ChangeLog - SMXmenu...
-xuiChangeLogMENU,UI,Menu,x,,[AF1E19]*[-] Changed how the changelog works.\n[AF1E19]*[-] Added: Small changes on the loading screen.\n[AF1E19]*[-] Added: New design for the respawn window.\n,,,,,
+xuiChangeLogMENU,UI,Menu,x,,[AF1E19]*[-] Stepped away from build numbers in version numbering.\n[AF1E19]*[-] Added: Twitch Integration options window.\n,,,,,
 smxCurrentVersionBranch,UI,Menu,x,,CURRENT STABLE VERSION
-smxCurrentVersionNumber,UI,Menu,x,,A19.2.Release1
+smxCurrentVersionNumber,UI,Menu,x,,r19.rc1
