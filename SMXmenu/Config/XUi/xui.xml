@@ -1,14 +1,10 @@
-<SMXmenu name="xui.xml">
+<SMXmenu name="XUi/xui.xml">
 
-<!--	// SMX // In-game Menu -->
+<!--	// SMX // In-Game Menu Window -->
 
-		<setattribute xpath="/xui/ruleset[@name='default']/window_group[@name='ingameMenu']/window[@name='ingameMenu']" name="anchor">LeftCenter</setattribute>
-
-
-<!--	// SMX // Clean Background -->
-
-		<append xpath="/xui/ruleset[@name='default']/window_group[@name='ingameMenu']">
-			<window name="SMXmenuCleanBG" />
-		</append>
+		<set xpath="/xui/ruleset[@name='default']/window_group[@name='ingameMenu']">
+			<window name="ingameMenu" anchor="LeftBottom" />
+			<window name="ingameMenuLogo" />
+		</set>
 
 </SMXmenu>

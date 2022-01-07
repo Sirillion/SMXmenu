@@ -1,5 +1,6 @@
 Key,File,Type,UsedInMainMenu,NoTranslate,english,Context / Alternate Text,german,latam,french,italian,japanese,koreana,polish,brazilian,russian,turkish,schinese,tchinese,spanish
-xuiChangeLogHeaderMENU,UI,Menu,x,,ChangeLog - SMXmenu...
-xuiChangeLogMENU,UI,Menu,x,,[AF1E19]*[-] Stepped away from build numbers in version numbering.\n[AF1E19]*[-] Added: Twitch Integration options window.\n,,,,,
 smxCurrentVersionBranch,UI,Menu,x,,CURRENT STABLE VERSION
-smxCurrentVersionNumber,UI,Menu,x,,r19.rc1
+smxCurrentVersionNumber,UI,Menu,x,,r20.rc1
+
+xuiChangeLogHeaderMENU,UI,Menu,x,,ChangeLog - SMXmenu...
+xuiChangeLogMENU,UI,Menu,x,,[AF1E19]*[-]  Updated to work with A20.\n[AF1E19]*[-]  Added new mainMenu.\n[AF1E19]*[-]  Added new optionsMenu.\n[AF1E19]*[-]  Added new editingMenu.\n[AF1E19]*[-]  Added new ingameMenu.\n[AF1E19]*[-]  Other windows coming later!\n,,,,,
