@@ -12,4 +12,6 @@ SMXmenu is a menu conversion modlet. It was made to extend the art style of SMX 
 
 > Dependencies: SMXlib.
 
+> Credits: Sirillion, sphereii, TormentedEMu
+
 > Compatibility: Will probably work with most mods/modlets that doesn't modify the same windows/areas in the XUI files and have a lower load order.
