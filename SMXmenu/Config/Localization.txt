@@ -1,0 +1,6 @@
+Key,File,Type,UsedInMainMenu,NoTranslate,english,Context / Alternate Text,german,latam,french,italian,japanese,koreana,polish,brazilian,russian,turkish,schinese,tchinese,spanish
+smxCurrentVersionBranch,UI,Menu,x,,CURRENT STABLE VERSION
+smxCurrentVersionNumber,UI,Menu,x,,r20.rc2
+
+xuiChangeLogHeaderMENU,UI,Menu,x,,ChangeLog - SMXmenu - r20.rc2
+xuiChangeLogMENU,UI,Menu,x,,[AF1E19]*[-]  FIXED: Improved changelog.\n[AF1E19]*[-]  FIXED: Minor opacity issues.\n[AF1E19]*[-]  FIXED: Minor positioning issues.\n[AF1E19]*[-]  FIXED: Minor button label adjustments.\n[AF1E19][-]  \n[AF1E19][-]  \n,,,,,

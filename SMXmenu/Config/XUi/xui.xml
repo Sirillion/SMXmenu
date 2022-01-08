@@ -1,0 +1,10 @@
+<SMXmenu name="XUi/xui.xml">
+
+<!--	// SMX // In-Game Menu Window -->
+
+		<set xpath="/xui/ruleset[@name='default']/window_group[@name='ingameMenu']">
+			<window name="ingameMenu" anchor="LeftBottom" />
+			<window name="ingameMenuLogo" />
+		</set>
+
+</SMXmenu>
