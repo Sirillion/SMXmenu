@@ -2,5 +2,5 @@ Key,File,Type,UsedInMainMenu,NoTranslate,english,Context / Alternate Text,german
 smxCurrentVersionBranch,UI,Menu,x,,CURRENT STABLE VERSION
 smxCurrentVersionNumber,UI,Menu,x,,r20.rc2
 
-xuiChangeLogHeaderMENU,UI,Menu,x,,ChangeLog - SMXmenu - r20.rc2
-xuiChangeLogMENU,UI,Menu,x,,[AF1E19]*[-]  FIXED: Improved changelog.\n[AF1E19]*[-]  FIXED: Minor opacity issues.\n[AF1E19]*[-]  FIXED: Minor positioning issues.\n[AF1E19]*[-]  FIXED: Minor button label adjustments.\n[AF1E19][-]  \n[AF1E19][-]  \n,,,,,
+xuiChangeLogHeaderMENU,UI,Menu,x,,ChangeLog - SMXmenu - r20.rc3
+xuiChangeLogMENU,UI,Menu,x,,[AF1E19]*[-]  CHANGE: Updated most color style references.\n[AF1E19][-]  \n[AF1E19][-]  \n[AF1E19][-]  \n[AF1E19][-]  \n[AF1E19][-]  \n,,,,,

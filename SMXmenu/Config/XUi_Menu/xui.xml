@@ -4,7 +4,7 @@
 
 		// EAC:				Friendly
 
-		// VERSION:			r20.rc2
+		// VERSION:			r20.rc3
 
 		// BUILD:			A20.0
 
@@ -45,6 +45,8 @@
 							available to the public.
 
 		// CREDITS:			Sirillion (main developer/designer/harmony/frontend/backend/author), sphereii (developer/harmony/backend), TormentedEmu (developer/harmony/backend)
+
+		// CONTRIBUTORS:	Laydor (code), Mumpfy (art)
 -->
 
 <!--	// SMX // Main Menu Window -->
