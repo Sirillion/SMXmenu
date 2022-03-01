@@ -1,7 +1,7 @@
 # SMXmenu - THE MENU REPLACEMENT MODLET
-> Verified to work with: A20.2B2
+> Verified to work with: A20.3B3
 
-> Dependencies: SMXlib.
+> Dependencies: [SMXlib](https://github.com/Sirillion/SMXlib).
 
 > Compatibility: Will probably work with most mods that doesn't modify the same windows in the XUI files.
 
@@ -55,9 +55,13 @@ Have fun! :)
 
 As of A20 I decided to move SMX into the lands of Harmony and with that digging even deeper into what we can do with modding the game. This requires knowledge that I do not possess enough of to be able to continue working on this on my own. As a result the team has grown and we have added some supernerds that know this stuff.
 
-> Main Credits: Sirillion (main developer/designer/xml/coding), sphereii (developer/coding), TormentedEmu (developer/coding)
+> Main Credits:
+> - Sirillion (main developer/designer/xml/coding)
+> - sphereii (developer/coding)
+> - TormentedEmu (developer/coding)
+> - Laydor (developer/coding)
 
-> Contributors: Laydor(code), Mumpfy(art)
+> Contributors: Mumpfy(art)
 
 
 ## **NEED SUPPORT?**
