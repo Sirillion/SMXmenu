@@ -1,5 +1,12 @@
 <SMXmenu name="XUi/windows.xml">
 
+<!-- 	// SMX // In-Game Menu Clean Background -->
+
+		<append xpath="/windows">
+			<window name="smxmenuCleanBG" style="nonpaging.window" controller="WindowNonPagingHeader" />
+		</append>
+
+
 <!-- 	// SMX // In-Game Menu Logo -->
 
 		<append xpath="/windows">
@@ -32,8 +39,8 @@
 				</grid>
 
 				<rect name="smxmenu_version_control">
-					<label name="smxmenu_edition_info" depth="9" pos="60,-500" size="250,33" style="smxlib_label_normal" text_key="smxCurrentVersionBranch" font_size="18" pivot="center" justify="center" upper_case="true" color="[smxmenu_element_labelcolor_1]" />
-					<label name="smxmenu_version_info" depth="9" pos="60,-520" size="250,33" style="smxlib_label_normal" text_key="smxCurrentVersionNumber" font_size="18" pivot="center" justify="center" upper_case="false" overflow="ShrinkContent" color="[smxmenu_element_labelcolor_2]" />
+					<label name="smxmenu_edition_info" depth="9" pos="60,-500" size="250,33" style="smxcore_label_normal" text_key="smxCurrentVersionBranch" font_size="18" pivot="center" justify="center" upper_case="true" color="[smxmenu_element_labelcolor_1]" />
+					<label name="smxmenu_version_info" depth="9" pos="60,-520" size="250,33" style="smxcore_label_normal" text_key="smxCurrentVersionNumber" font_size="18" pivot="center" justify="center" upper_case="false" overflow="ShrinkContent" color="[smxmenu_element_labelcolor_2]" />
 				</rect>
 			</window>
 		</append>

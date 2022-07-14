@@ -7,9 +7,9 @@
 		<append xpath="/windows">
 			<window name="toolTip" depth="310" width="100" height="25" controller="ToolTip">
 				<rect>
-					<sprite name="sprBackground" depth="0" pos="3,-3" sprite="menu_empty" type="sliced" color="[smxlib_tooltip_background]" globalopacitymod="1.3" />
-					<sprite name="sprBackgroundBorder" depth="1" sprite="menu_empty2px" type="sliced" fillcenter="false" color="[smxlib_tooltip_border]" globalopacitymod="1.5" />
-					<label name="lblText" depth="3" pos="10,-7" style="smxlib_label_normal" text="" font_size="25" overflow="resizefreely" color="[smxmenu_element_labelcolor_1]" />
+					<sprite name="sprBackground" depth="0" pos="3,-3" sprite="menu_empty" type="sliced" color="[smxcore_tooltip_background]" globalopacitymod="1.3" />
+					<sprite name="sprBackgroundBorder" depth="1" sprite="menu_empty2px" type="sliced" fillcenter="false" color="[smxcore_tooltip_border]" globalopacitymod="1.5" />
+					<label name="lblText" depth="3" pos="10,-7" style="smxcore_label_normal" text="" font_size="25" overflow="resizefreely" color="[smxmenu_element_labelcolor_1]" />
 				</rect>
 			</window>
 		</append>
@@ -17,7 +17,7 @@
 
 <!--	// SMX // Background Texture Replacement -->
 
-		<set xpath="/windows/window[@name='menuBackground']/texture/@texture">@modfolder(SMXlib)://Textures/smxmenu_window_background.png</set>
+		<set xpath="/windows/window[@name='menuBackground']/texture/@texture">@modfolder(SMXcore)://Textures/smxmenu_window_background.png</set>
 
 
 <!--	// SMX // Main Menu Logo Adjustment -->
@@ -36,18 +36,18 @@
 			<window name="smxmenuChangeLogWindow" depth="1" pos="-275,150" size="950,150" controller="InfoWindow" cursor_area="true" >
 				<rect name="smxmenu_changelog_main_content" pos="0,5">
 					<rect name="smxmenu_changelog_main_header" depth="2" pos="0,-20" width="950" height="30">
-						<label name="smxmenu_changelog_header" depth="3" pos="0,-7" width="316" height="30" style="smxlib_label_normal" text="" text_key="xuiChangeLogHeaderMENU" font_size="18" color="[smxmenu_element_labelcolor_1]" />
-						<label name="smxhud_changelog_header" depth="3" pos="317,-7" width="316" height="30" style="smxlib_label_normal" text="" text_key="xuiChangeLogHeaderHUD" font_size="18" color="[smxmenu_element_labelcolor_1]" />
-						<label name="smxui_changelog_header" depth="3" pos="634,-7" width="316" height="30" style="smxlib_label_normal" text="" text_key="xuiChangeLogHeaderUI" font_size="18" color="[smxmenu_element_labelcolor_1]" />
+						<label name="smxmenu_changelog_header" depth="3" pos="0,-7" width="316" height="30" style="smxcore_label_normal" text="" text_key="xuiChangeLogHeaderMENU" font_size="18" color="[smxmenu_element_labelcolor_1]" />
+						<label name="smxhud_changelog_header" depth="3" pos="317,-7" width="316" height="30" style="smxcore_label_normal" text="" text_key="xuiChangeLogHeaderHUD" font_size="18" color="[smxmenu_element_labelcolor_1]" />
+						<label name="smxui_changelog_header" depth="3" pos="634,-7" width="316" height="30" style="smxcore_label_normal" text="" text_key="xuiChangeLogHeaderUI" font_size="18" color="[smxmenu_element_labelcolor_1]" />
 					</rect>
 					<rect name="smxmenu_changelog_content" depth="3" pos="0,-55" width="316" height="100"> <!-- Edit lines in localization.txt - Keep width in mind & MAX 6 Lines! -->
-						<label name="smxmenu_changelog_entry" depth="5" pos="10,-5" width="100%" height="100%" style="smxlib_label_normal" text="" text_key="xuiChangeLogMENU" font_size="14" color="[smxmenu_element_labelcolor_1]" />
+						<label name="smxmenu_changelog_entry" depth="5" pos="10,-5" width="100%" height="100%" style="smxcore_label_normal" text="" text_key="xuiChangeLogMENU" font_size="14" color="[smxmenu_element_labelcolor_1]" />
 					</rect>
 					<rect name="smxhud_changelog_content" depth="3" pos="317,-55" width="316" height="100"> <!-- Edit lines in localization.txt - Keep width in mind & MAX 6 Lines! -->
-						<label name="smxhud_changelog_entry" depth="5" pos="10,-5" width="100%" height="100%" style="smxlib_label_normal" text="" text_key="xuiChangeLogHUD" font_size="14" color="[smxmenu_element_labelcolor_1]" />
+						<label name="smxhud_changelog_entry" depth="5" pos="10,-5" width="100%" height="100%" style="smxcore_label_normal" text="" text_key="xuiChangeLogHUD" font_size="14" color="[smxmenu_element_labelcolor_1]" />
 					</rect>
 					<rect name="smxui_changelog_content" depth="3" pos="634,-55" width="316" height="100"> <!-- Edit lines in localization.txt - Keep width in mind & MAX 6 Lines! -->
-						<label name="smxui_changelog_entry" depth="5" pos="10,-5" width="100%" height="100%" style="smxlib_label_normal" text="" text_key="xuiChangeLogUI" font_size="14" color="[smxmenu_element_labelcolor_1]" />
+						<label name="smxui_changelog_entry" depth="5" pos="10,-5" width="100%" height="100%" style="smxcore_label_normal" text="" text_key="xuiChangeLogUI" font_size="14" color="[smxmenu_element_labelcolor_1]" />
 					</rect>
 				</rect>
 			</window>
@@ -78,8 +78,8 @@
 				</widget>
 
 				<rect name="smxmenu_version_control">
-					<label name="smxmenu_edition_info" depth="9" pos="60,-500" size="250,33" style="smxlib_label_normal" text_key="smxCurrentVersionBranch" font_size="18" pivot="center" justify="center" upper_case="true" color="[smxmenu_element_labelcolor_1]" />
-					<label name="smxmenu_version_info" depth="9" pos="60,-520" size="250,33" style="smxlib_label_normal" text_key="smxCurrentVersionNumber" font_size="18" pivot="center" justify="center" upper_case="false" overflow="ShrinkContent" color="[smxmenu_element_labelcolor_2]" />
+					<label name="smxmenu_edition_info" depth="9" pos="60,-500" size="250,33" style="smxcore_label_normal" text_key="smxCurrentVersionBranch" font_size="18" pivot="center" justify="center" upper_case="true" color="[smxmenu_element_labelcolor_1]" />
+					<label name="smxmenu_version_info" depth="9" pos="60,-520" size="250,33" style="smxcore_label_normal" text_key="smxCurrentVersionNumber" font_size="18" pivot="center" justify="center" upper_case="false" overflow="ShrinkContent" color="[smxmenu_element_labelcolor_2]" />
 				</rect>
 			</window>
 		</append>
@@ -149,5 +149,12 @@
 		</append>
 
 		<remove xpath="/windows/window[@name='credits']/widget/mainmenubutton" />
+
+
+<!-- 	// SMX // Main Menu Clean Background -->
+
+		<append xpath="/windows">
+			<window name="smxmenuCleanBG" style="nonpaging.window" controller="WindowNonPagingHeader" />
+		</append>
 
 </SMXmenu>
