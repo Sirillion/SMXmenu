@@ -25,17 +25,19 @@
 
 				<sprite name="smxmenu_mainmenu_background" depth="2" pos="60,0" width="408" anchor_top="#cam,0.5,1000" anchor_bottom="#cam,0.5,-1000" sprite="smxmenu_mainmenu_background" pivot="center" color="[smxmenu_element_background]" globalopacitymod="1.3" />
 
-				<!--sprite name="smxmenu_optionsmenu_smx_logo" depth="3" pos="60,180" size="588,588" sprite="smxmenu_mainmenu_smx_logo" pivot="center" globalopacitymod="1.5" /-->
-
 				<grid name="smxmenu_ingamemenu_grid" depth="3" pos="50,-430" pivot="bottomleft" rows="8" cell_width="230" cell_height="70" repeat_content="false" arrangement="vertical">
+
 					<smxmenu_mainmenubutton name="btnTpPoi" width="230" height="65" pivot="center" caption_key="xuiMenuTeleportPoiButton" overflow="ShrinkContent" />
 					<smxmenu_mainmenubutton name="btnExportPrefab" width="230" height="65" pivot="center" caption_key="xuiMenuExportPrefab" overflow="ShrinkContent" />
 					<smxmenu_mainmenubutton name="btnInvite" width="230" height="65" pivot="center" caption_key="xuiMenuInvite" overflow="ShrinkContent" />
 					<smxmenu_mainmenubutton name="btnOptions" width="230" height="65" pivot="center" caption_key="xuiMenuOptions" overflow="ShrinkContent" />
 					<smxmenu_mainmenubutton name="btnHelp" width="230" height="65" pivot="center" caption_key="xuiMenuHelp" overflow="ShrinkContent" />
 					<smxmenu_mainmenubutton name="btnSave" width="230" height="65" pivot="center" caption_key="xuiMenuSave" overflow="ShrinkContent" />
+
 					<rect><sprite name="smxmenu_mainmenu_separation" depth="1" pos="-140,-28" width="301" height="5" sprite="smxlib_separation_line_2" color="[smxmenu_element_separation_2]" /></rect>
+
 					<smxmenu_mainmenubutton name="btnExit" width="230" height="65" pivot="center" caption_key="xuiMenuExit" overflow="ShrinkContent" />
+
 				</grid>
 
 				<rect name="smxmenu_version_control">

@@ -1,0 +1,57 @@
+<SMXmenu name="XUi/controls.xml">
+
+<!--	// SMX // Main Menu Button -->
+
+		<append xpath="/controls">
+			<smxmenu_controls	pos="0,0"
+								visible="true" 
+								values="@DEF" 
+								value_min="@DEF" 
+								value_max="@DEF" 
+								value_wrap="@DEF" 
+								value_increment="@DEF" 
+								reverse_list="@DEF" 
+								localization_prefix="" 
+								format_string="" 
+								width="655">
+
+				<rect	pos="${pos}" 
+						width="${width}" 
+						height="32">
+
+					<label	depth="4" 
+							pos="0,0" 
+							width="350" 
+							height="30" 
+							style="hover" 
+							tooltip_key="xuiOptionsControls${name}Tooltip" 
+							text_key="xuiOptionsControls${name}" 
+							font_size="28" 
+							color="[white]" 
+							justify="right" 
+							pivot="topleft" 
+							visible="${visible}" />
+
+					<combobox	name="${name}"
+								type="${type}" 
+								value_min="${value_min}" 
+								value_max="${value_max}" 
+								value_wrap="${value_wrap}" 
+								value_increment="${value_increment}" 
+								values="${values}" 
+								reverse_list="${reverse_list}" 
+								localization_prefix="${localization_prefix}" 
+								format_string="${format_string}" 
+								pos="355,0" 
+								width="${width-355}" 
+								height="32" 
+								visible="${visible}" />
+				</rect>
+			</smxmenu_controls>
+		</append>
+
+		<set xpath="/controls/controloption/rect/label/@style">hover, smxcore_label_normal</set>
+
+		<setattribute xpath="/controls/controloption/rect/label" name="style">smxcore_label_normal</setattribute>
+
+</SMXmenu>

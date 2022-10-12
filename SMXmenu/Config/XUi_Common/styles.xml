@@ -79,7 +79,7 @@
 				<style_entry name="font_size" 						value="36" />
 				<style_entry name="color" 							value="[SMXlibElementsLBLPri]" />
 				<style_entry name="upper_case" 						value="true" />
-				<style_entry name="crispness" 						value="Never" />
+				<style_entry name="crispness" 						value="OnDesktop" />
 				<style_entry name="effect" 							value="outline" />
 				<style_entry name="effect_distance" 				value="1,1" />
 				<style_entry name="justify" 						value="center" />
