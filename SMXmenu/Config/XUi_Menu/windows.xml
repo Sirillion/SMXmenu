@@ -116,6 +116,7 @@
 
 				<grid name="smxmenu_optionsmenu_grid" depth="3" pos="50,-430" pivot="bottomleft" rows="8" cell_width="230" cell_height="70" repeat_content="false" arrangement="vertical">
 
+					<smxmenu_mainmenubutton name="btnGeneral" width="230" height="65" pivot="center" caption_key="xuiBtnOptionsGeneral" overflow="ShrinkContent" />
 					<smxmenu_mainmenubutton name="btnVideo" width="230" height="65" pivot="center" caption_key="xuiBtnOptionsVideo" overflow="ShrinkContent" />
 					<smxmenu_mainmenubutton name="btnAudio" width="230" height="65" pivot="center" caption_key="xuiBtnOptionsAudio" overflow="ShrinkContent" />
 					<smxmenu_mainmenubutton name="btnControls" width="230" height="65" pivot="center" caption_key="xuiBtnOptionsControls" overflow="ShrinkContent" />
@@ -141,16 +142,37 @@
 
 		<append xpath="/windows">
 			<window name="optionsVideo" depth="2" pos="-750,450" width="1500" height="900" anchor="CenterCenter" controller="OptionsVideo" cursor_area="true">
+			<!--window name="optionsVideo" depth="99" pos="-300,0" width="600" height="900" anchor="CenterTop" controller="OptionsVideo" cursor_area="true"-->
+<!-- WIP
+	<sprite name="smxui_window_paging_background" depth="0" pos="0,0" width="1844" height="57" sprite="smxui_paging_background" anchor_left="#cam,0,-5" anchor_right="#cam,1,5" flip="vertically" color="[smxui_element_background]" globalopacitymod="1.8" />
+	<sprite name="smxui_window_paging_separator" depth="1" pos="0,-42" width="1844" height="3" sprite="smxlib_separation_line_1" anchor_left="#cam,0,-5" anchor_right="#cam,1,5" flip="vertically" color="[smxui_element_separation_1]" globalopacitymod="1.8" />
 
+	<grid name="smxui_window_paging_separation" depth="-1" pos="401,-25" width="600" height="40" pivot="center" rows="1" cols="9" cell_width="200" cell_height="50" arrangement="horizontal" repeat_content="true">
+		<sprite name="smxui_window_paging_separator" depth="2" pos="0,0" width="45" height="2" sprite="smxlib_separation_line_1" rotation="-90" color="[smxui_element_separation_1]" globalopacitymod="1.8" />
+	</grid>
+
+	<grid name="smxui_window_paging_buttons_background" depth="1" pos="400,-46" width="600" height="45" pivot="center" rows="1" cols="10" cell_width="200" cell_height="50" arrangement="horizontal" repeat_content="true">
+		<sprite name="smxui_window_paging_button_background" depth="1" width="198" height="42" sprite="smxui_button_background" color="[smxcore_element_backdrop_1]" pivot="center" globalopacitymod="1.2" />
+	</grid>
+
+	<sprite name="smxmenu_window_background" depth="-10" pos="0,0" size="10000,10000" type="sliced" anchor_left="#cam,0,-5" anchor_bottom="#cam,0,-5" anchor_right="#cam,1,5" anchor_top="#cam,1,5" color="[smxui_element_background]" globalopacitymod="1.2" />
+-->
 				<smxcore_window_design name="windowName" depth="1" width="1500" height="900" text="" text_key="xuiOptionsVideo" />
 
 				<rect name="tabs" pos="40,-70" width="250" height="750" controller="TabSelector">
+				<!--rect name="tabs" pos="-11,22" width="208" height="45" controller="TabSelector"--> <!-- WIP -->
 
 					<rect name="tabsHeader" depth="0" width="250" height="750">
+					<!--rect name="tabsHeader" depth="0" width="208" height="45"--> <!-- WIP -->
 
 						<grid name="tabButtons" depth="2" pos="115,-10" rows="4" cols="1" cell_width="230" cell_height="70" repeat_content="true" arrangement="vertical">
+						<!--grid name="tabButtons" depth="2" pos="0,0" rows="1" cols="4" cell_width="208" cell_height="45" repeat_content="false" arrangement="vertical"--> <!-- WIP -->
 							<rect>
 								<smxmenu_mainmenubutton name="tabButton" depth="2" pos="0,0" width="230" height="65" pivot="center" caption_key="xuiBack" />
+								<!--smxmenu_mainmenubutton2 name="tabButton" depth="2" pos="-400,-21" width="208" height="45" pivot="center" caption_key="xuiBack" />
+								<smxmenu_mainmenubutton2 name="tabButton" depth="2" pos="-200,-21" width="208" height="45" pivot="center" caption_key="xuiBack" />
+								<smxmenu_mainmenubutton2 name="tabButton" depth="2" pos="0,-21" width="208" height="45" pivot="center" caption_key="xuiBack" />
+								<smxmenu_mainmenubutton2 name="tabButton" depth="2" pos="200,-21" width="208" height="45" pivot="center" caption_key="xuiBack" /--> <!-- WIP -->
 							</rect>
 						</grid>
 
@@ -159,6 +181,7 @@
 					<sprite name="smxui_artline_vertical" depth="9" pos="270,-5" width="800" height="3" sprite="smxlib_separation_line_1" flip="vertically" rotation="270" color="[smxui_element_separation_1]" globalopacitymod="1.2" />
 
 					<rect name="tabsContents" depth="2" pos="290,0" width="1130" height="650">
+					<!--rect name="tabsContents" depth="2" pos="0,-60" width="1130" height="650"--> <!-- WIP -->
 
 						<rect tab_key="xuiOptionsVideoDisplay">
 
@@ -294,7 +317,7 @@
 									<smxmenu_settings name="DepthOfField" type="ComboBoxBool" localization_prefix="xuiComboOnOff" text_key="xuiOptionsVideo${name}" tooltip_key="xuiOptionsVideo${name}Tooltip2" />
 									<smxmenu_settings name="MotionBlur" type="ComboBoxList`1[System.String]" values="Off,Simple,Normal" localization_prefix="xuiOptionsVideoComplexity" value_wrap="false" text_key="xuiOptionsVideo${name}" tooltip_key="xuiOptionsVideo${name}Tooltip2" />
 									<smxmenu_settings name="SSAO" type="ComboBoxBool" localization_prefix="xuiComboOnOff" text_key="xuiOptionsVideo${name}" tooltip_key="xuiOptionsVideo${name}Tooltip2" />
-									<smxmenu_settings name="SSReflections" type="ComboBoxList`1[System.String]" values="Off,Low,Medium,High" localization_prefix="xuiOptionsVideoPresets" value_wrap="false" text_key="xuiOptionsVideo${name}" tooltip_key="xuiOptionsVideo${name}Tooltip2" />
+									<smxmenu_settings name="SSReflections" type="ComboBoxList`1[System.String]" values="Off,Low,Medium,High,Ultra" localization_prefix="xuiOptionsVideoPresets" value_wrap="false" text_key="xuiOptionsVideo${name}" tooltip_key="xuiOptionsVideo${name}Tooltip2" />
 									<smxmenu_settings name="SunShafts" type="ComboBoxBool" localization_prefix="xuiComboOnOff" text_key="xuiOptionsVideo${name}" tooltip_key="xuiOptionsVideo${name}Tooltip2" />
 
 								</grid>
@@ -328,13 +351,13 @@
 
 								<grid pos="30,-60" rows="13" cell_width="800" cell_height="80" repeat_content="false" arrangement="vertical" >
 
-									<rect>
+									<!--rect>
 										<smxmenu_settings name="Language" type="ComboBoxList`1[XUiC_OptionsVideo+LanguageInfo]" value_wrap="false" text_key="xuiOptionsVideo${name}" tooltip_key="xuiOptionsVideo${name}Tooltip2" />
 										<sprite depth="8" sprite="ui_game_symbol_quest" pos="-25,-5" width="20" height="20" color="[smxcore_element_accentcolor_2]" tooltip_key="xuiOptionsVideoLanguageGameRestart" />
-									</rect>
+									</rect-->
 
-									<smxmenu_settings name="TempCelsius" type="ComboBoxBool" localization_prefix="xuiBoolCelsius" text_key="xuiOptionsVideo${name}" tooltip_key="xuiOptionsVideo${name}Tooltip2" />
-									<smxmenu_settings name="JournalPopup" type="ComboBoxBool" localization_prefix="xuiComboYesNo" text_key="xuiOptionsVideo${name}" tooltip_key="xuiOptionsVideo${name}Tooltip2" />
+									<!--smxmenu_settings name="TempCelsius" type="ComboBoxBool" localization_prefix="xuiBoolCelsius" text_key="xuiOptionsVideo${name}" tooltip_key="xuiOptionsVideo${name}Tooltip2" />
+									<smxmenu_settings name="JournalPopup" type="ComboBoxBool" localization_prefix="xuiComboYesNo" text_key="xuiOptionsVideo${name}" tooltip_key="xuiOptionsVideo${name}Tooltip2" /-->
 
 									<rect><label name="subtitle" depth="4" pos="160,-48" width="350" height="40" style="hover, smxcore_label_normal" text_key="xuiOptionsVideoOpacity" font_size="32" pivot="center" justify="left" upper_case="true" color="[smxui_element_labelcolor_2]" /></rect>
 
@@ -416,7 +439,7 @@
 
 							<label name="title"	depth="4" pos="180,-28" width="350" height="40" style="hover, smxcore_label_normal" text_key="xuiOptionsAudioSound" font_size="32" pivot="center" justify="left" upper_case="true" color="[smxui_element_labelcolor_2]" />
 
-							<grid pos="20,-60" rows="13" cell_width="800" cell_height="80" repeat_content="false" arrangement="vertical">
+							<grid pos="20,-60" rows="14" cell_width="800" cell_height="80" repeat_content="false" arrangement="vertical">
 
 								<smxmenu_settings name="OverallAudioVolumeLevel" type="ComboBoxFloat" value_increment="0.05" value_wrap="false" format_string="0%" text_key="xuiOptionsAudio${name}" tooltip_key="xuiOptionsAudio${name}Tooltip2" />
 								<smxmenu_settings name="AmbientVolumeLevel" type="ComboBoxFloat" value_increment="0.05" value_wrap="false" format_string="0%" text_key="xuiOptionsAudio${name}" tooltip_key="xuiOptionsAudio${name}Tooltip2" />
@@ -437,6 +460,7 @@
 
 							<grid pos="20,-60" rows="12" cell_width="800" cell_height="80" repeat_content="false" arrangement="vertical" >
 
+								<smxmenu_settings name="MumblePositionalAudioSupportEnabled" type="ComboBoxBool" localization_prefix="xuiComboYesNo" text_key="xuiOptionsAudio${name}" tooltip_key="xuiOptionsAudio${name}Tooltip2" />
 								<smxmenu_settings name="VoiceChatEnabled" type="ComboBoxBool" localization_prefix="xuiComboYesNo" visible="{# commsallowed and voiceavailable}" text_key="xuiOptionsAudio${name}" tooltip_key="xuiOptionsAudio${name}Tooltip2" />
 								<smxmenu_settings name="VoiceOutputDevice" type="ComboBoxList`1[Platform.IPartyVoice+VoiceAudioDevice]" value_wrap="false" visible="{# commsallowed and voiceavailable}" text_key="xuiOptionsAudio${name}" tooltip_key="xuiOptionsAudio${name}Tooltip2" />
 								<smxmenu_settings name="VoiceInputDevice" type="ComboBoxList`1[Platform.IPartyVoice+VoiceAudioDevice]" value_wrap="false" visible="{# commsallowed and voiceavailable}" text_key="xuiOptionsAudio${name}" tooltip_key="xuiOptionsAudio${name}Tooltip2" />
@@ -538,7 +562,8 @@
 
 								<grid pos="30,-60" rows="13" cell_width="800" cell_height="80" repeat_content="false" arrangement="vertical" >
 
-									<smxmenu_settings name="LookSensitivity" type="ComboBoxFloat" value_increment="0.1" value_wrap="false" format_string="0.00" text_key="xuiOptionsControls${name}" tooltip_key="xuiOptionsControls${name}Tooltip2" />
+									<smxmenu_settings name="LookSensitivity" type="ComboBoxFloat" value_increment="0.01" value_wrap="false" format_string="0.00" text_key="xuiOptionsControls${name}" tooltip_key="xuiOptionsControls${name}Tooltip2" />
+									<smxmenu_settings name="ZoomAccel" type="ComboBoxFloat" value_increment="0.01" value_wrap="false" format_string="0.00" text_key="xuiOptionsControls${name}" tooltip_key="xuiOptionsControls${name}Tooltip2" />
 									<smxmenu_settings name="ZoomSensitivity" type="ComboBoxFloat" value_increment="0.01" value_wrap="false" format_string="0.00" text_key="xuiOptionsControls${name}" tooltip_key="xuiOptionsControls${name}Tooltip2" />
 									<smxmenu_settings name="VehicleSensitivity" type="ComboBoxFloat" value_increment="0.01" value_wrap="false" format_string="0.00" text_key="xuiOptionsControls${name}" tooltip_key="xuiOptionsControls${name}Tooltip2" />
 
@@ -886,7 +911,7 @@
 		<remove xpath="/windows/window[@name='newsWindow']" />
 
 		<append xpath="/windows">
-			<window name="newsWindow" depth="20" pos="450,250" width="400" height="550" anchor="CenterCenter" controller="NewsWindow" cursor_area="true" browse_sound="Sounds/Crafting/craft_click_recipe" on_scroll="true">
+			<window name="newsWindow" depth="20" pos="450,250" width="400" height="550" anchor="CenterCenter" controller="NewsWindow" cursor_area="true" browse_sound="Sounds/Crafting/craft_click_recipe" on_scroll="true" additional_sources="">
 
 				<smxcore_window_design name="windowName" depth="1" width="400" height="550" text="Latest News" text_key="" visible="{has_news_provider}" />
 				<smxui_window_design_menu_top depth="1" width="400" height="550" />
@@ -903,6 +928,7 @@
 
 						<label name="date" depth="3" pos="200,-66" width="340" height="30" style="smxcore_label_normal" text="{date} - {age}" font_size="18" pivot="center" justify="right" color="[smxmenu_element_labelcolor_2]" />
 
+						<label name="source" depth="3" pos="40,-78" width="490" height="30" font_size="26" text="{# localization('From Mod')}{# length(source) > 0 ? ': ' + source : ''}" color="[tan]" visible="{is_custom}" />
 					</rect>
 
 					<rect name="smxmenu_window_content" depth="3" pos="0,-150" width="400" height="350" visible="{has_news}">

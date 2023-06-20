@@ -56,6 +56,60 @@
 								justify="center" />
 				</rect>
 			</smxmenu_mainmenubutton>
+
+	<smxmenu_mainmenubutton2	depth="3"
+							pos="0,0"
+							width="208"
+							height="45"
+							pivot="left"
+							caption=""
+							caption_key=""
+							enabled_font_color="[labelColor]"
+							disabled_font_color="[disabledLabelColor]"
+							tooltip_key=""
+							visible="true"
+							enabled="true"
+							sound="[default_click]">
+
+		<rect	name="${name}"
+				depth="${depth}"
+				pos="${pos}"
+				width="${width}"
+				height="${height}"
+				font_size_default="24"
+				enabled_font_color="${enabled_font_color}"
+				disabled_font_color="${disabled_font_color}"
+				controller="SimpleButton"
+				visible="${visible}"
+				button_enabled="${enabled}">
+
+			<button	name="clickable"
+					pos="10,${Round(-height/2,0)}"
+					sprite="smxlib_button_background"
+					defaultcolor="[smxmenu_element_button_foreground]"
+					selectedcolor="[smxmenu_element_button_selected]"
+					hoversprite="smxlib_button_foreground"
+					hovercolor="[smxmenu_element_button_hover]"
+					hoverscale="1.0"
+					pivot="${pivot}"
+					tooltip_key="${tooltip_key}"
+					sound_play_on_hover="[default_hover]"
+					sound="${sound}" />
+
+			<label		name="btnLabel"
+						depth="2"
+						pos="10,${Round(-2-height/2,0)}"
+						width="${width}"
+						height="${height}"
+						style="smxcore_label_normal"
+						text="${caption}"
+						text_key="${caption_key}"
+						font_size="24"
+						upper_case="true"
+						pivot="${pivot}"
+						justify="center" />
+		</rect>
+	</smxmenu_mainmenubutton2>
 		</append>
 
 
@@ -327,6 +381,79 @@
 										visible="${visible}" />
 				</rect>
 			</smxmenu_settings>
+
+			<smxmenu_settings2	 	depth="6" 
+									pos="0,0"
+									width="1130"
+									height="75"
+									values="@DEF" 
+									value_min="@DEF" 
+									value_max="@DEF" 
+									value_wrap="@DEF" 
+									value_increment="@DEF" 
+									reverse_list="@DEF" 
+									localization_prefix="" 
+									format_string=""
+									visible="true">
+				<rect	pos="${pos}" 
+						width="${width}" 
+						height="75"
+						visible="${visible}">
+
+					<sprite	name="background"
+							depth="13" 
+							pos="-20,0" 
+							sprite="smxhud_chat_background" 
+							hovercolor="[red]"
+							color="[white]" 
+							globalopacitymod="0.4"
+							visible="${visible}" />
+
+					<label	name="title"
+							depth="14" 
+							pos="0,-4" 
+							width="800" 
+							height="26" 
+							style="hover, smxcore_label_normal" 
+							text_key="${text_key}" 
+							font_size="22" 
+							color="[smxmenu_element_labelcolor_1]" 
+							pivot="topleft" 
+							justify="left" 
+							tooltip_key="${tooltip_key}" 
+							visible="${visible}" />
+
+					<label	name="description"
+							depth="14" 
+							pos="0,-32" 
+							width="800" 
+							height="60" 
+							style="hover, smxcore_label_normal" 
+							text_key="${tooltip_key}" 
+							font_size="18" 
+							color="[smxmenu_element_labelcolor_2]" 
+							pivot="topleft" 
+							justify="left" 
+							visible="${visible}" />
+
+					<smxmenu_combobox	name="${name}" 
+										depth="15"
+										pos="800,-23" 
+										width="300" 
+										height="32" 
+										type="${type}" 
+										values="${values}" 
+										value_min="${value_min}" 
+										value_max="${value_max}" 
+										value_wrap="${value_wrap}" 
+										value_increment="${value_increment}" 
+										reverse_list="${reverse_list}" 
+										localization_prefix="${localization_prefix}" 
+										format_string="${format_string}" 
+										tooltip_key="${tooltip_key}" 
+										visible="${visible}" />
+				</rect>
+			</smxmenu_settings2>
 		</append>
 
 
@@ -596,7 +723,7 @@
 			<smx_audiooption_1>
 				<rect pos="${pos|0,0}" width="560" height="32">
 					<label depth="4" pos="0,-2" width="250" height="30" style="hover" tooltip_key="xuiOptionsAudio${name}Tooltip" text_key="xuiOptionsAudio${name}" color="[SMXlibElementsLBLPri]" font_size="22" crispness="OnDesktop" effect="outline" effect_distance="1,1" upper_case="false" justify="right" pivot="topleft" visible="${visible|true}" />
-					<smx_gameoption_combobox_1 name="${name}" type="${type}" value_min="${value_min|@DEF}" value_max="${value_max|@DEF}" value_wrap="${value_wrap|@DEF}" value_increment="${value_increment|@DEF}" values="${values|@DEF}" reverse_list="${reverse_list|@DEF}" localization_prefix="${localization_prefix|}" format_string="${format_string|}" pos="255,0" width="300" height="32" visible="${visible|true}" />
+					<smx_gameoption_combobox_1 name="${name}" type="${type}" value_min="${value_min|@DEF}" value_max="${value_max|@DEF}" value_wrap="${value_wrap|@DEF}" value_increment="${value_increment|@DEF}" values="${values|@DEF}" reverse_list="${reverse_list|@DEF}" localization_prefix="${localization_prefix|}" format_string="${format_string|}" pos="255,0" width="300" height="32" visible="${visible|true}" index_markers="false" />
 				</rect>
 			</smx_audiooption_1>
 		</append>
@@ -608,7 +735,7 @@
 			<smx_videooption_1>
 				<rect pos="${pos|0,0}" width="560" height="32">
 					<label depth="4" pos="0,-2" width="250" height="30" style="hover" tooltip_key="xuiOptionsVideo${name}Tooltip" text_key="xuiOptionsVideo${name}" color="[SMXlibElementsLBLPri]" font_size="22" crispness="OnDesktop" effect="outline" effect_distance="1,1" upper_case="false" justify="right" pivot="topleft" visible="${visible|true}" />
-					<smx_gameoption_combobox_1 name="${name}" type="${type}" value_min="${value_min|@DEF}" value_max="${value_max|@DEF}" value_wrap="${value_wrap|@DEF}" value_increment="${value_increment|@DEF}" values="${values|@DEF}" reverse_list="${reverse_list|@DEF}" localization_prefix="${localization_prefix|}" format_string="${format_string|}" pos="255,0" width="300" height="32" visible="${visible|true}" />
+					<smx_gameoption_combobox_1 name="${name}" type="${type}" value_min="${value_min|@DEF}" value_max="${value_max|@DEF}" value_wrap="${value_wrap|@DEF}" value_increment="${value_increment|@DEF}" values="${values|@DEF}" reverse_list="${reverse_list|@DEF}" localization_prefix="${localization_prefix|}" format_string="${format_string|}" pos="255,0" width="300" height="32" visible="${visible|true}" index_markers="false" />
 				</rect>
 			</smx_videooption_1>
 		</append>
@@ -620,13 +747,13 @@
 			<smx_controloption_1>
 				<rect pos="${pos|0,0}" width="560" height="32">
 					<label depth="4" pos="0,-2" width="250" height="30" style="hover" tooltip_key="xuiOptionsControls${name}Tooltip" text_key="xuiOptionsControls${name}" color="[SMXlibElementsLBLPri]" font_size="22" crispness="OnDesktop" effect="outline" effect_distance="1,1" upper_case="false" justify="right" pivot="topleft" />
-					<smx_gameoption_combobox_1 name="${name}" type="${type}" value_min="${value_min|@DEF}" value_max="${value_max|@DEF}" value_wrap="${value_wrap|@DEF}" value_increment="${value_increment|@DEF}" values="${values|@DEF}" reverse_list="${reverse_list|@DEF}" localization_prefix="${localization_prefix|}" format_string="${format_string|}" pos="255,0" width="300" height="32" />
+					<smx_gameoption_combobox_1 name="${name}" type="${type}" value_min="${value_min|@DEF}" value_max="${value_max|@DEF}" value_wrap="${value_wrap|@DEF}" value_increment="${value_increment|@DEF}" values="${values|@DEF}" reverse_list="${reverse_list|@DEF}" localization_prefix="${localization_prefix|}" format_string="${format_string|}" pos="255,0" width="300" height="32" index_markers="false" />
 				</rect>
 			</smx_controloption_1>
 		</append>
 
 
-<!--	// SMX // Browser Bame Options -->
+<!--	// SMX // Browser Game Options -->
 
 		<append xpath="/controls">
 			<smx_browsergameoptioninfo_1>
