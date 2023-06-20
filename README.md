@@ -1,5 +1,5 @@
 # SMXmenu - THE MENU REPLACEMENT MODLET
-> Verified to work with: A20.6B9
+> Verified to work with: A21.0B317
 
 > Dependencies: [SMXcore](https://github.com/Sirillion/SMXcore).
 
@@ -7,7 +7,7 @@
 
 ## **DESCRIPTION:**
 
-With the release of A20 SMXhud has now evolved into the world of Harmony. This means that it does now mod deeper than ever before and that opens the door for more and better features. On the flip side this means it is no longer EAC friendly, so turn EAC off.
+With the release of A21 SMXhud has now evolved into the world of Harmony. This means that it does now mod deeper than ever before and that opens the door for more and better features. On the flip side this means it is no longer EAC friendly, so turn EAC off.
 
 SMXmenu changes the game menus. Everything you see when you start the game or when navigating the different options and settings is part of the menu experience. The purpose of SMXmenu is to extend the art style and feeling from the HUD into the menus and to supplement SMXhud to create the SMX experience.
 
