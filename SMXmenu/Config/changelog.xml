@@ -4,8 +4,8 @@
   <entry>
     <date>2024.06.18</date>
     <is_custom>vX.X.X.X</is_custom>
-    <headline>Changelog</headline>
-    <headline2>SMXmenu</headline2>
+    <title>Changelog</title>
+    <title2>SMXmenu</title2>
     <text>Changelog Test</text>
     <link>https://raw.githubusercontent.com/Sirillion/SMXmenu/master/SMXmenu/Config/changelog.xml</link>
   </entry>
