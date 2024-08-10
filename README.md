@@ -1,5 +1,5 @@
 # SMXmenu - THE MENU REPLACEMENT MODLET
-> Verified to work with: A21.0B317
+> Verified to work with: 1.333
 
 > Dependencies: [SMXcore](https://github.com/Sirillion/SMXcore).
 
