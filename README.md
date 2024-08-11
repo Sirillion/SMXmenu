@@ -12,12 +12,17 @@ With the release of A21 SMXhud has now evolved into the world of Harmony. This m
 SMXmenu changes the game menus. Everything you see when you start the game or when navigating the different options and settings is part of the menu experience. The purpose of SMXmenu is to extend the art style and feeling from the HUD into the menus and to supplement SMXhud to create the SMX experience.
 
 <p align="center">
-  <img src="https://7dtd-community.s3.us-east-2.amazonaws.com/monthly_2022_01/A20.0_2022-01-07_01-54-09.jpg.475ac1d05700fe5823f5830d0473caac.jpg" width="1080" title="SMXmenu - Main Menu - A20">
+  <img src="https://imgur.com/4p0b86E.png" width="1080" title="SMXmenu - Main Menu - 1.0">
 </p>
 <p align="center">
-  <img src="https://7dtd-community.s3.us-east-2.amazonaws.com/monthly_2022_01/A20.0_2022-01-07_01-52-55.jpg.18b420d530a611874e636fedc8f6e42d.jpg" width="1080" title="SMXhud - In-Game Menu - A20">
+  <img src="https://imgur.com/c33a9Sv.png" width="1080" title="SMXmenu - In-Game Menu - 1.0">
 </p>
-
+<p align="center">
+  <img src="https://imgur.com/m8nC4LI.png" width="1080" title="SMXmenu - Menu Example - 1.0">
+</p>
+<p align="center">
+  <img src="https://imgur.com/7Y5BWlG.png" width="1080" title="SMXmenu - Loading Screens by Mumpfy - 1.0">
+</p>
 
 ## **WELCOME**
 
