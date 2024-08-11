@@ -23,6 +23,9 @@ SMXmenu changes the game menus. Everything you see when you start the game or wh
 <p align="center">
   <img src="https://imgur.com/7Y5BWlG.png" width="1080" title="SMXmenu - Loading Screens by Mumpfy - 1.0">
 </p>
+<p align="center">
+  <img src="https://imgur.com/12qEucM.png" width="1080" title="SMXmenu - News Screen - 1.0">
+</p>
 
 ## **WELCOME**
 
