@@ -5,6 +5,8 @@
 
 > Compatibility: Will probably work with most mods that doesn't modify the same windows in the XUI files.
 
+> Changelog: https://sirillion.github.io/smxmenuchangelog/
+
 ## **DESCRIPTION:**
 
 With the release of A21 SMXhud has now evolved into the world of Harmony. This means that it does now mod deeper than ever before and that opens the door for more and better features. On the flip side this means it is no longer EAC friendly, so turn EAC off.
