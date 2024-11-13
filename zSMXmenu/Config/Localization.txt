@@ -3,7 +3,7 @@ Key,File,Type,UsedInMainMenu,NoTranslate,english,Context / Alternate Text,german
 smxSettingGeneral,UI,Menu,x,,SMXmenu General Settings,,,,,
 smxSettingGeneralTooltip,UI,Menu,x,,General settings for SMXmenu,,,,,
 smxSettingAnimatedBackground,UI,Menu,x,,Enable Animated Background,,,,,
-smxSettingAnimatedBackgroundTooltip,UI,Menu,x,,Enables an Animated Background by Mumpfy. Requires restarting the game,,,,,
+smxSettingAnimatedBackgroundTooltip,UI,Menu,x,,Enables an Animated Background by Mumpfy.\n\nRequires restarting the game.,,,,,
 
 xuiOptionsDynamicMesh,UI,XUI Dynamic Mesh,,,Dynamic Mesh,,Dynamisches Meshing,Malla Dinámica,Maille Dynamique,Rete Dinamica,動的メッシュ,다이나믹 메쉬,Siatki Dynamicznej,Malha Dinâmica,Динамическая сетка,Mesh Seçenekleri,动态网格,動態網格,Malla Dinámica
 
