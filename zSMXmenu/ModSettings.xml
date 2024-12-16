@@ -2,8 +2,8 @@
 <ModSettings>
   <Global>
     <Tab name="Optionals" displayKey="" tooltipKey="">
-      <Category name="General" displayKey="smxSettingGeneral" tooltipKey="smxSettingGeneralTooltip">
-        <Switch name="AnimatedBackground" displayKey="smxSettingAnimatedBackground" tooltipKey="smxSettingAnimatedBackgroundTooltip" value="Off" defaultValue="Off" leftValue="Off" rightValue="On" />
+      <Category name="General" displayKey="smxmenuSettingGeneral" tooltipKey="smxmenuSettingGeneralTooltip">
+        <Switch name="AnimatedBackground" displayKey="smxmenuSettingAnimatedBackground" tooltipKey="smxmenuSettingAnimatedBackgroundTooltip" value="Off" defaultValue="Off" leftValue="Off" rightValue="On" />
       </Category>
     </Tab>
   </Global>
